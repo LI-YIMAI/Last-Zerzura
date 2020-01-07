@@ -47,5 +47,4 @@ public class TreeNode {
 
 
 <a href="https://youtu.be/kT-q31NzQUI
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="420" height="240" border="10" /></a>
+" target="_blank"><img src="https://github.com/LI-YIMAI/COMP3004/blob/master/README_Source/ucarl08.jpg" width="420" height="240" border="10" /></a>
