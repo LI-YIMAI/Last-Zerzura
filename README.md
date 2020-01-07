@@ -10,6 +10,8 @@ http://olgabaysal.com/teaching/winter20/comp3004_w20.html
 - [Current Goal](#current-goal)
 - [Code Testing](#code-testing)
 
+---
+
 ###  Project Discription
 
 
