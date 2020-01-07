@@ -9,7 +9,7 @@ http://olgabaysal.com/teaching/winter20/comp3004_w20.html
 - [Team Members](#team-members)
 - [Current Goal](#current-goal)
 - [Code Testing](#code-testing)
-
+- [Carleton Youtube Video](#carleton-youtube-video)
 ---
 
 ###  Project Discription
@@ -45,6 +45,7 @@ public class TreeNode {
 }
 ```
 
+### Carleton Youtube Video
 
 <a href="https://youtu.be/kT-q31NzQUI
 " target="_blank"><img src="https://github.com/LI-YIMAI/COMP3004/blob/master/README_Source/ucarl08.jpg" width="620" height="240" border="10" /></a>
