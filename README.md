@@ -3,13 +3,14 @@ Carleton comp3004
 
 ##  Table of Content
 
-- [Smileys & Emotion](#project--discription)
-
+- [Project Discription](#project--discription)
+- [Team Members](#team--members)
+- [Code Testing](#code-testing)
 
 ###  Project Discription
 
 
-## Team Members
+### Team Members
 Name |
 -----|
 Chang Liu|
@@ -17,7 +18,7 @@ Yimai Li|
 Zeye Gu|
 FengTing Guo|
 
-## Code Testing
+### Code Testing
 
 `if (){}`
 
