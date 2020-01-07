@@ -3,9 +3,9 @@ Carleton comp3004
 
 ##  Table of Content
 
-- [Project Discription](#Project--Discription)
+- [Project Discription](#project--discription)
 - [Team Members](#team--members)
-- [Code Testing](#Code--Testing)
+- [Code Testing](#code--testing)
 
 ###  Project Discription
 
