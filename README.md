@@ -10,7 +10,7 @@ Carleton comp3004
 
 
 ### Instructor. Website
-
+http://olgabaysal.com/teaching/winter20/comp3004_w20.html
 
 ###  Project Discription
 
