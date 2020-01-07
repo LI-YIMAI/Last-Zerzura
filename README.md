@@ -1,4 +1,4 @@
-# COMP3004
+# COMP3004 :thinking:
 Carleton comp3004
 
 ### Instructor website
