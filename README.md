@@ -1,5 +1,4 @@
 # :cn: COMP3004 :thinking:
-Carleton comp3004
 
 ### Instructor website :u7981:
 http://olgabaysal.com/teaching/winter20/comp3004_w20.html
