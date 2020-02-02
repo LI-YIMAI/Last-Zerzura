@@ -29,8 +29,7 @@ Zeye Gu|
 FengTing Guo|
 
 ### Current Goal
-- [x] this is a complete item
-- [ ] this is an incomplete item
+- [ ] Wrote all use cases.
 
 
 ### Code Testing
