@@ -27,6 +27,8 @@ FengTing Guo|
 ### Current Goal
 - [ ] Write all use cases.
 
+### Use Cases
+https://github.com/LI-YIMAI/COMP3004/wiki
 
 ### Code Testing
 
