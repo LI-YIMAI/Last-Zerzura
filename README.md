@@ -8,7 +8,6 @@ http://olgabaysal.com/teaching/winter20/comp3004_w20.html
 - [Project Discription](#project-discription)
 - [Team Members](#team-members)
 - [Current Goal](#current-goal)
-- [Use Cases](#use-cases)
 - [Code Testing](#code-testing)
 - [Carleton Youtube Video](#carleton-youtube-video)
 ---
@@ -26,7 +25,7 @@ Zeye Gu|
 FengTing Guo|
 
 ### Current Goal
-- [ ] Write all use cases.
+- [ ] /
 
 ### Use Cases
 https://github.com/LI-YIMAI/COMP3004/wiki
