@@ -13,11 +13,7 @@ http://olgabaysal.com/teaching/winter20/comp3004_w20.html
 ---
 
 ###  Project Discription
-
-
-
-
-
+Survivors is a Tower Defense game set in a human world that is invaded by robots. The Survivors is free to play without any ads, and it supports the Android platform.
 
 
 ### Team Members
@@ -29,7 +25,7 @@ Zeye Gu|
 FengTing Guo|
 
 ### Current Goal
-- [ ] Wrote all use cases.
+- [ ] Write all use cases.
 
 
 ### Code Testing
