@@ -1,6 +1,6 @@
 # :cn: COMP3004 :thinking:
 
-### Instructor website :u7981:
+### Instructor website
 http://olgabaysal.com/teaching/winter20/comp3004_w20.html
 
 ##  Table of Content
