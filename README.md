@@ -8,7 +8,7 @@ http://olgabaysal.com/teaching/winter20/comp3004_w20.html
 - [Project Discription](#project-discription)
 - [Team Members](#team-members)
 - [Current Goal](#current-goal)
-- [Requirements Of The Project](#requirements of the project)
+- [Requirements Of The Project](#requirements-of-the-project)
 - [Code Testing](#code-testing)
 - [Carleton Youtube Video](#carleton-youtube-video)
 ---
