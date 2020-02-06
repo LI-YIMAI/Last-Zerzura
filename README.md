@@ -29,7 +29,9 @@ FengTing Guo|
 
 
 ### Requirements Of The Project
-archutectural Styles used in the project.
+* Archutectural Styles used in the project.
+* Component Diagram (D2)
+* Class Diagram (D3)
 
 ### Code Testing
 
