@@ -27,8 +27,9 @@ FengTing Guo|
 ### Current Goal
 - [ ] /
 
-### Use Cases
-https://github.com/LI-YIMAI/COMP3004/wiki
+
+### Requirements Of The Project
+archutectural Styles used in the project.
 
 ### Code Testing
 
