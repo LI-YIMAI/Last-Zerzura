@@ -9,7 +9,7 @@ http://olgabaysal.com/teaching/winter20/comp3004_w20.html
 - [Team Members](#team-members)
 - [Current Goal](#current-goal)
 - [Requirements Of The Project](#requirements-of-the-project)
-- [Code Testing](#code-testing)
+- [Important Code](#important-code)
 - [Carleton Youtube Video](#carleton-youtube-video)
 ---
 
@@ -37,6 +37,7 @@ FengTing Guo|
 
 ### Important Code
 
+#### How to load the next scene
 ``` c#
 //To Load a Scene, you must use this
 GameStaticValue.currentScene = 2; //GameStaticValue is all values that pass through different scenes
