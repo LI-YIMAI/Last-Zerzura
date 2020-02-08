@@ -40,7 +40,7 @@ FengTing Guo|
 #### How to load the next scene
 ``` c#
 //To Load a Scene, you must use this
-GameStaticValue.currentScene = 2; //GameStaticValue is all values that pass through different scenes
+GameStaticValue.currentScene = 2; //GameStaticValue saves all values that pass through different scenes
 SceneManager.LoadScene(1); // Scene 1 is the loading screen
 ```
 
