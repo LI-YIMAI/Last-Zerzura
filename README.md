@@ -35,16 +35,12 @@ FengTing Guo|
 * Component Diagram (D2)
 * Class Diagram (D3)
 
-### Code Testing
+### Important Code
 
-``` java
-public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-
-}
+``` c#
+//To Load a Scene, you must use this
+GameStaticValue.currentScene = 2; //GameStaticValue is all values that pass through different scenes
+SceneManager.LoadScene(1); // Scene 1 is the loading screen
 ```
 
 ### Carleton Youtube Video
