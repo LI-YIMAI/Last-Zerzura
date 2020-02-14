@@ -63,9 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameStaticValue.cs" />
-    <Compile Include="Assets\Menu_Play.cs" />
-    <Compile Include="Assets\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\Game_Manager.cs" />
+    <Compile Include="Assets\Scripts\GameStaticValue.cs" />
+    <Compile Include="Assets\Scripts\Menu_Play.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <None Include="Assets\Fonts 1\Fonts\Lecompte\Lecompte.fnt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
