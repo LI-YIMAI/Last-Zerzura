@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Menu_Play : MonoBehaviour
 {
 
+
     public void goToPlayScene(){
         
         GameStaticValue.currentScene = 2;
