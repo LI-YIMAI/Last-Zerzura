@@ -1,18 +1,25 @@
 ﻿<Properties StartupConfiguration="{74EB7025-5A08-3DF8-80E0-8313DEFBBE2B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game_Manager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Zone UI/Scripts/MainPanelManager.cs">
     <Files>
       <File FileName="Assets/Scripts/Game_Manager.cs" Line="40" Column="17" />
-      <File FileName="Assets/Scripts/GameStaticValue.cs" Line="9" Column="35" />
-      <File FileName="Assets/Scripts/SceneLoader.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Menu_Play.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameStaticValue.cs" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" />
+      <File FileName="Assets/Scripts/Menu_Play.cs" />
+      <File FileName="Assets/Zone UI/Scripts/VirtualCursorAnimate.cs" Line="18" Column="1" />
+      <File FileName="Assets/Zone UI/Scripts/VirtualCursorAnimate.cs" Line="18" Column="1" />
+      <File FileName="Assets/Zone UI/Scripts/VirtualCursorAnimate.cs" Line="18" Column="1" />
+      <File FileName="Assets/Zone UI/Scripts/MainPanelManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Last Odyseey" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Game_Manager.cs" selected="True" />
+              <Node name="Scripts" expanded="True" />
+              <Node name="Zone UI" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="MainPanelManager.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -22,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2679bf56-4108-4f31-84fb-26f0cb6fcf2f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="186b4903-e579-4d0e-8772-6d81a2bff0ae" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
