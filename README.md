@@ -17,6 +17,7 @@ http://olgabaysal.com/teaching/winter20/comp3004_w20.html
 ###  Project Discription
 Survivors is a Tower Defense game set in a human world that is invaded by robots. The Survivors is free to play without any ads, and it supports the Android platform.
 
+---
 
 ### Team Members
 Name |
@@ -26,15 +27,20 @@ Yimai Li|
 Zeye Gu|
 FengTing Guo|
 
+---
+
 ### Current Goal
 - [ ] /
 
+---
 
 ### Requirements Of The Project
 * Design Pattern
 * Archutectural Styles used in the project.
 * Component Diagram (D2)
 * Class Diagram (D3)
+
+---
 
 ### Important Code
 
@@ -45,8 +51,11 @@ GameStaticValue.currentScene = 2; //GameStaticValue saves all values that pass t
 SceneManager.LoadScene(1); // Scene 1 is the loading screen
 ```
 
+---
+
 ### How to Play This Game
 
+---
 
 ### Carleton Youtube Video
 
