@@ -7,7 +7,7 @@
       <File FileName="Assets/Zone UI/Scripts/VirtualCursorAnimate.cs" />
       <File FileName="Assets/Zone UI/Scripts/MainPanelManager.cs" />
       <File FileName="Assets/Scripts/GameStaticValue.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ChangeBackgroundImageByList.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ChangeBackgroundImageByList.cs" Line="36" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
