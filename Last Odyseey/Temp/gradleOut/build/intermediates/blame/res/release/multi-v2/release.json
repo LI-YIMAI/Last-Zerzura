@@ -1,0 +1,69 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Temp/gradleOut/build/intermediates/res/merged/release/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Temp/gradleOut/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "2,2",
+                        "startOffsets": "53,101",
+                        "endColumns": "47,65",
+                        "endOffsets": "98,164"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,105",
+                        "endColumns": "49,67",
+                        "endOffsets": "100,168"
+                    }
+                },
+                {
+                    "source": "/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Temp/gradleOut/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "5,2,7",
+                        "startColumns": "0,0,0",
+                        "startOffsets": "190,53,288",
+                        "endLines": "6,4,10",
+                        "endColumns": "8,8,8",
+                        "endOffsets": "286,188,513"
+                    },
+                    "to": {
+                        "startLines": "4,6,9",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "173,273,411",
+                        "endLines": "5,8,12",
+                        "endColumns": "8,8,8",
+                        "endOffsets": "268,406,633"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Temp/gradleOut/build/intermediates/res/merged/release/values-v21_values-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Temp/gradleOut/src/main/res/values-v21/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "0",
+                        "startOffsets": "53",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "153"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "154"
+                    }
+                }
+            ]
+        }
+    ]
+}
