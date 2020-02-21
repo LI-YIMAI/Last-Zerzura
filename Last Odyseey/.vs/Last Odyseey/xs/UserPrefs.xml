@@ -1,13 +1,7 @@
 ﻿<Properties StartupConfiguration="{74EB7025-5A08-3DF8-80E0-8313DEFBBE2B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ChangeBackgroundImageByList.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Game_Manager.cs" Line="40" Column="17" />
-      <File FileName="Assets/Scripts/SceneLoader.cs" />
-      <File FileName="Assets/Scripts/Menu_Play.cs" />
-      <File FileName="Assets/Zone UI/Scripts/VirtualCursorAnimate.cs" />
-      <File FileName="Assets/Zone UI/Scripts/MainPanelManager.cs" />
-      <File FileName="Assets/Scripts/GameStaticValue.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ChangeBackgroundImageByList.cs" Line="36" Column="27" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="32" Column="86" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +9,7 @@
           <Node name="Last Odyseey" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="ChangeBackgroundImageByList.cs" selected="True" />
+                <Node name="LevelManager.cs" selected="True" />
               </Node>
               <Node name="Zone UI" expanded="True">
                 <Node name="Scripts" expanded="True" />
@@ -31,7 +25,7 @@
     <String>Assembly-CSharp-Editor.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ee3a95eb-f498-4280-a8a7-2b724f6e5eb6" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="88402481-ce35-4794-a780-8a7e3a73c5c3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
