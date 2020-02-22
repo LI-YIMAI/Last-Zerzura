@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{74EB7025-5A08-3DF8-80E0-8313DEFBBE2B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TileScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/LevelManager.cs" Line="32" Column="86" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/Point.cs" Line="5" Column="20" />
+      <File FileName="Assets/Scripts/TileScript.cs" Line="8" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +11,7 @@
           <Node name="Last Odyseey" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="LevelManager.cs" selected="True" />
+                <Node name="TileScript.cs" selected="True" />
               </Node>
               <Node name="Zone UI" expanded="True">
                 <Node name="Scripts" expanded="True" />
