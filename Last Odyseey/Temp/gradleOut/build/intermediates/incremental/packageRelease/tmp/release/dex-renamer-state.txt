@@ -1,4 +1,0 @@
-#Fri Feb 21 18:11:20 EST 2020
-base.0=/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Temp/gradleOut/build/intermediates/transforms/dexMerger/release/0
-path.0=classes.dex
-renamed.0=classes.dex

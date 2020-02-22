@@ -1,15 +1,25 @@
 ﻿<Properties StartupConfiguration="{74EB7025-5A08-3DF8-80E0-8313DEFBBE2B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/Hover.cs">
     <Files>
-      <File FileName="Assets/Scripts/LevelManager.cs" Line="32" Column="86" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="72" Column="32" />
+      <File FileName="Assets/Resources/Level.txt" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/Point.cs" Line="15" Column="2" />
+      <File FileName="Assets/Scripts/TileScript.cs" Line="74" Column="41" />
+      <File FileName="Assets/Scripts/Game/Singleton.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/Game/GameManager.cs" Line="32" Column="2" />
+      <File FileName="Assets/Scripts/Game/TowerBtn.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/Game/Hover.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Last Odyseey" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="Resources" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="LevelManager.cs" selected="True" />
+                <Node name="Game" expanded="True">
+                  <Node name="Hover.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="Zone UI" expanded="True">
                 <Node name="Scripts" expanded="True" />
@@ -25,7 +35,7 @@
     <String>Assembly-CSharp-Editor.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="88402481-ce35-4794-a780-8a7e3a73c5c3" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d0510a98-39c1-45af-b5c0-67a8b4b34965" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
