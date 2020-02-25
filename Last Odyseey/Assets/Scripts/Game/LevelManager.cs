@@ -40,6 +40,7 @@ public class LevelManager : Singleton<LevelManager>
 
         int mapX = mapData[0].ToCharArray().Length;
         int mapY = mapData.Length;
+
         Vector3 worldStart = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height));
         for (int y = 0; y < mapY; y++)
         {
