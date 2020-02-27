@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 410398997}
   m_Layer: 5
   m_Name: StormBtn
-  m_TagString: Untagged
+  m_TagString: StormBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 1020985657}
   m_Layer: 5
   m_Name: FireBtn
-  m_TagString: Untagged
+  m_TagString: FireBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -950,7 +950,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -63.2, y: -225.1}
+  m_AnchoredPosition: {x: -63.19995, y: -225.1}
   m_SizeDelta: {x: 126.4, y: 450.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334624285
@@ -1108,7 +1108,7 @@ GameObject:
   - component: {fileID: 1658358276}
   m_Layer: 5
   m_Name: PoisionBtn
-  m_TagString: Untagged
+  m_TagString: PoisionBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1251,7 +1251,7 @@ GameObject:
   - component: {fileID: 1672556929}
   m_Layer: 5
   m_Name: FrozBtn
-  m_TagString: Untagged
+  m_TagString: FrozBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -12,7 +12,7 @@ public class TileScript : MonoBehaviour
     public bool IsEmpty { get; private set; }
     public Point GridPosition{ get; private set; }
 
-    public Vector2 WorldPosition
+    public Vector2 WorldPosition_center
     {
         get
         {
@@ -32,14 +32,10 @@ public class TileScript : MonoBehaviour
 
     }
 
-    //public void Setup(Point gridPos, Vector3 worldPos)
-    //{
-    //    this.GridPosition = gridPos;
-    //    transform.position = worldPos;
-    //}
-    public void Setup(Point gridPos, Vector3 worldPos, Transform parent)
+  
+    public void Setup(Point gridPos, Vector3 worldPos, Transform parent,bool condition)
     {
-        IsEmpty = true;
+        IsEmpty = condition;
         this.GridPosition = gridPos;
         transform.position = worldPos;
         transform.SetParent(parent);
