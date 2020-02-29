@@ -63,14 +63,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ChangeBackgroundImageByList.cs" />
-    <Compile Include="Assets\Scripts\Game_Manager.cs" />
-    <Compile Include="Assets\Scripts\GameStaticValue.cs" />
-    <Compile Include="Assets\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Menu_Play.cs" />
-    <Compile Include="Assets\Scripts\Point.cs" />
-    <Compile Include="Assets\Scripts\SceneLoader.cs" />
-    <Compile Include="Assets\Scripts\TileScript.cs" />
+    <Compile Include="Assets\Scripts\Game\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Hover.cs" />
+    <Compile Include="Assets\Scripts\Game\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Point.cs" />
+    <Compile Include="Assets\Scripts\Game\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Game\TileScript.cs" />
+    <Compile Include="Assets\Scripts\Game\TowerBtn.cs" />
+    <Compile Include="Assets\Scripts\UI\ChangeBackgroundImageByList.cs" />
+    <Compile Include="Assets\Scripts\UI\Game_Manager.cs" />
+    <Compile Include="Assets\Scripts\UI\GameStaticValue.cs" />
+    <Compile Include="Assets\Scripts\UI\Menu_Play.cs" />
+    <Compile Include="Assets\Scripts\UI\SceneLoader.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -160,19 +164,19 @@
     <None Include="Assets\Fonts 1\Fonts\Lecompte\Lecompte.fnt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/yimaili/Desktop/comp3004/version1/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/yimaili/Desktop/comp3004/version1/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/yimaili/Desktop/comp3004/version1/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/yimaili/Desktop/comp3004/version1/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/yimaili/Desktop/comp3004/version1/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -373,13 +377,13 @@
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.17f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/yimaili/Desktop/comp3004/version1/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/yimaili/Desktop/comp3004/version1/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/guzeye/Desktop/COMP3004/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/yimaili/Desktop/comp3004/version1/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.17f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
