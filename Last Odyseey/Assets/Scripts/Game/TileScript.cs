@@ -94,7 +94,7 @@ public class TileScript : MonoBehaviour
         tower.GetComponent<SpriteRenderer>().sortingOrder = GridPosition.Y;
         // put tiles clone to map GameObject 
         tower.transform.SetParent(transform);
-
+        Debug.Log(transform.name);
 
         IsEmpty = false;
         ColorTile(Color.white);
