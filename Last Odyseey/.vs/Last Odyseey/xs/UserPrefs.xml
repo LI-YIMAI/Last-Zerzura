@@ -1,26 +1,22 @@
 ﻿<Properties StartupConfiguration="{74EB7025-5A08-3DF8-80E0-8313DEFBBE2B}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Level.txt">
     <Files>
-      <File FileName="Assets/Resources/Level.txt" Line="8" Column="19" />
-      <File FileName="Assets/Scripts/Game/Singleton.cs" Line="22" Column="1" />
-      <File FileName="Assets/Scripts/Game/GameManager.cs" Line="149" Column="25" />
-      <File FileName="Assets/Scripts/Game/TowerBtn.cs" Line="46" Column="6" />
-      <File FileName="Assets/Scripts/Game/Hover.cs" Line="39" Column="9" />
-      <File FileName="Assets/Scripts/Game/LevelManager.cs" Line="31" Column="30" />
-      <File FileName="Assets/Scripts/Game/TileScript.cs" Line="23" Column="40" />
-      <File FileName="Assets/Scripts/Game/Astar/Node.cs" Line="35" Column="1" />
-      <File FileName="Assets/Scripts/Game/Astar/AStar.cs" Line="120" Column="6" />
-      <File FileName="Assets/Scripts/Game/Astar/AstarDebugging.cs" Line="37" Column="8" />
-      <File FileName="Assets/Scripts/Game/Point.cs" Line="28" Column="1" />
-      <File FileName="Assets/Scripts/Game/Astar/DebugTile.cs" Line="23" Column="28" />
-      <File FileName="Assets/Scripts/Game/ObjectPool.cs" Line="19" Column="96" />
-      <File FileName="Assets/Scripts/Game/Monster.cs" Line="84" Column="92" />
+      <File FileName="Assets/Scripts/Game/Monster.cs" Line="1" Column="1" />
+      <File FileName="Assets/FogOfWar/Source files/Scripts/Fow_Script.cs" />
+      <File FileName="Assets/Resources/Level.txt" Line="6" Column="14" />
+      <File FileName="Assets/Scripts/Game/GameManager.cs" Line="179" Column="39" />
+      <File FileName="Assets/Scripts/UI/Game_Manager.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Last Odyseey" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="FogOfWar" expanded="True">
+                <Node name="Source files" expanded="True">
+                  <Node name="Scripts" expanded="True" />
+                </Node>
+              </Node>
               <Node name="Resources" expanded="True">
                 <Node name="Level.txt" selected="True" />
               </Node>
@@ -28,6 +24,7 @@
                 <Node name="Game" expanded="True">
                   <Node name="Astar" expanded="True" />
                 </Node>
+                <Node name="UI" expanded="True" />
               </Node>
               <Node name="Zone UI" expanded="True">
                 <Node name="Scripts" expanded="True" />
@@ -43,7 +40,7 @@
     <String>Assembly-CSharp-Editor.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8f474dd3-3fc1-4f90-bc6c-6c86b30fe6f7" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="63692b5c-89a5-4957-9ee5-cc4cf44984d9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

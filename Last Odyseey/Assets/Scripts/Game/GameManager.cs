@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 
 public class GameManager : Singleton<GameManager>
 {
     
     
-
+    public GameObject ExitWindowPanel; // used for pausing game
     public TowerBtn ClickedBtn { get; set; }
 
     // property
@@ -40,14 +42,18 @@ public class GameManager : Singleton<GameManager>
     void Start()
     {
         // set the Gold to 5 and assign it to Goldtext 
-        Gold = 10;
+        Gold = 30;
     }
 
     // Update is called once per frame
     void Update()
     {
         HandleEscape();
+
+        //pasue game whien exit window is opened
+        
     }
+
     public void PickTower(TowerBtn towerBtn)
     {
         this.ClickedBtn = towerBtn;
@@ -151,4 +157,26 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitForSeconds(2.5f);
     }
 
+
+    public void goToAScene(int sceneNumber) {
+
+            //reload the game, go to next level
+            GameStaticValue.currentScene = sceneNumber; //GameStaticValue saves all values that pass through different scenes
+            SceneManager.LoadScene(1); // Scene 1 is the loading screen
+    }
+
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+        ExitWindowPanel.SetActive(true);
+    }
+
+    public void ContinueGame()
+    {
+        Time.timeScale = 1;
+        //enable the scripts again
+        ExitWindowPanel.SetActive(true);
+
+    }
 }

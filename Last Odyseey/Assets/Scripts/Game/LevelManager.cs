@@ -96,14 +96,18 @@ public class LevelManager : Singleton<LevelManager>
         //int tileIndex = int.Parse(tileType);
         bool empty;
         bool walkable;
-        if (tileType=='d'||tileType=='e')
+        if (tileType == 'a') //if you can place tower here
         {
+            empty = true;
+            walkable = false;
+        }
+        else if (tileType == 'e') {
             empty = false;
             walkable = true;
         }
         else
         {
-            empty = true;
+            empty = false;
             walkable = false;
         }
         // create TileScript object 
