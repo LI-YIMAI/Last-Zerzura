@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 2410725369315147370}
   - component: {fileID: 3660321556574942173}
   - component: {fileID: 8810222573317696908}
-  - component: {fileID: 114898732502615178}
   m_Layer: 0
-  m_Name: FireTower
+  m_Name: FireIdle_0000s_0020_Layer-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,17 +99,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114898732502615178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533979794624241126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 2
-  edgeSharpness: 0

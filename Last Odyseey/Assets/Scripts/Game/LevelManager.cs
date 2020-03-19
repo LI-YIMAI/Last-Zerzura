@@ -41,6 +41,13 @@ public class LevelManager : Singleton<LevelManager>
             return new Stack<Node>(new Stack<Node>(path));
         }
     }
+    public Point BlueSpawn
+    {
+        get
+        {
+            return blueSpawn;
+        }
+    }
     // store each tiles
     public Dictionary<Point, TileScript> Tiles { get; set; }
 
@@ -57,7 +64,7 @@ public class LevelManager : Singleton<LevelManager>
         
     }
 
-    // Update is called once per frame
+    // Update is called once per frame, thus, the path will be updated per frame
     void Update()
     {
         
@@ -96,18 +103,14 @@ public class LevelManager : Singleton<LevelManager>
         //int tileIndex = int.Parse(tileType);
         bool empty;
         bool walkable;
-        if (tileType == 'a') //if you can place tower here
+        if (tileType=='d'||tileType=='e')
         {
-            empty = true;
-            walkable = false;
-        }
-        else if (tileType == 'e') {
             empty = false;
             walkable = true;
         }
         else
         {
-            empty = false;
+            empty = true;
             walkable = false;
         }
         // create TileScript object 
@@ -167,4 +170,5 @@ public class LevelManager : Singleton<LevelManager>
         // call GetPath and pass the start point and end point, and get the returned path back which is type of stack
         path = AStar.GetPath(blueSpawn, redSpawn);
     }
+
 }

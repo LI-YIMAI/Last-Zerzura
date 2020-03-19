@@ -15,6 +15,8 @@ public class Monster : MonoBehaviour
 
     public bool IsActive { get; set; }
 
+    private Animator myAnimator;
+
     private void Update()
     {
         // been called per frame
@@ -24,15 +26,17 @@ public class Monster : MonoBehaviour
     {
         // set the start spqwn position
         transform.position = LevelManager.Instance.BluePortal.transform.position;
+        // get the animator component
+        myAnimator = GetComponent<Animator>();
         // starts to scale the monster 
-        StartCoroutine(Scale(new Vector3(0.1f, 0.1f), new Vector3(1, 1)));
+        StartCoroutine(Scale(new Vector3(0.1f, 0.1f), new Vector3(1, 1), false));
         // once finished scaling the monster, we set the monster path which will be passed from LevelManager
         SetPath(LevelManager.Instance.Path);
     }
 
-    public IEnumerator Scale(Vector3 from, Vector3 to)
+    public IEnumerator Scale(Vector3 from, Vector3 to, bool remove)
     {
-        IsActive = false;
+        //IsActive = false;
         float progress = 0;
 
         while (progress<=1)
@@ -46,6 +50,11 @@ public class Monster : MonoBehaviour
         }
         transform.localScale = to;
         IsActive = true;
+        if (remove)
+        {
+            Release();
+            
+        }
     }
 
     private void Move()
@@ -60,6 +69,7 @@ public class Monster : MonoBehaviour
             {
                 if (path != null && path.Count > 0)
                 {
+                    Animate(GridPosition, path.Peek().Gridposition);
                     // we just wannna use it's node and get the Gridposition
 
                     //used to retrieve or fetch the first element of the Stack or the element present at the top of the Stack.
@@ -78,6 +88,7 @@ public class Monster : MonoBehaviour
         if (newPath != null)
         {
             this.path = newPath;
+            Animate(GridPosition, path.Peek().Gridposition);
             //used to retrieve or fetch the first element of the Stack or the element present at the top of the Stack.
             //The element retrieved does not get deleted or removed from the Stack.
             GridPosition = path.Peek().Gridposition;
@@ -85,4 +96,54 @@ public class Monster : MonoBehaviour
             destination = path.Pop().WorldPosition;
         }
     }
+
+    private void Animate(Point currentPos, Point newPos)
+    {
+        if (currentPos.Y > newPos.Y)
+        {
+            // moving down
+            myAnimator.SetInteger("Horizontal", 0);
+            myAnimator.SetInteger("Vertical", 1);
+        }
+        else if (currentPos.Y < newPos.Y)
+        {
+            //moving up
+            myAnimator.SetInteger("Horizontal", 0);
+            myAnimator.SetInteger("Vertical", -1);
+        }
+        if (currentPos.Y == newPos.Y)
+        {
+            if (currentPos.X > newPos.X)
+            {
+                //moving left
+                myAnimator.SetInteger("Horizontal", -1);
+                myAnimator.SetInteger("Vertical", 0);
+            }
+            else if (currentPos.X < newPos.X)
+            {
+                //moving right
+                myAnimator.SetInteger("Horizontal", 1);
+                myAnimator.SetInteger("Vertical", 0);
+            }
+        }
+    }
+
+    // if the mosnter hit the protal with tag "RedPortal"
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "RedPortal")
+        {
+            // pass true and release the monster 
+            StartCoroutine(Scale(new Vector3(1, 1), new Vector3(0.1f, 0.1f),true));
+        }
+    }
+
+    private void Release()
+    {
+        IsActive = false;
+        GridPosition = LevelManager.Instance.BlueSpawn;
+        GameManager.Instance.Pool.ReleaseObject(gameObject);
+        GameManager.Instance.Removemonster(this);
+    }
+
 }
