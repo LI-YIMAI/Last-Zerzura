@@ -41,6 +41,11 @@ public class GameManager : Singleton<GameManager>
     private Text Goldtext;
     private List<Monster> Activemonster = new List<Monster >();
 
+
+    //current selected Tower
+    public Tower selectedTower;
+
+
     public ObjectPool Pool { get; set; }
 
     private void Awake()
@@ -184,6 +189,24 @@ public class GameManager : Singleton<GameManager>
         {
             wavebtn.SetActive(true);
         }
+    }
+
+    public void SelectTower(Tower tower) {
+
+        if (selectedTower != null) {
+            selectedTower.Select();
+        }
+        selectedTower = tower;
+        selectedTower.Select();
+    }
+
+    public void DeselectTower() {
+
+        if (selectedTower != null) {
+            selectedTower.Select();
+        }
+
+        selectedTower = null;
     }
 
 }

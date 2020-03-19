@@ -20,6 +20,9 @@ public class TileScript : MonoBehaviour
     public bool IsWalkable { get; private set; }
     public Point GridPosition{ get; private set; }
 
+
+    private Tower myTower;
+
     public Vector2 WorldPosition_center
     {
         get
@@ -53,12 +56,12 @@ public class TileScript : MonoBehaviour
 
     public void OnMouseOver()
     {
-        
+
         // check if mouse click over the gameobejct and the ClickedBtn is not null, then call place tower
         // Once it click the tower,
         // the tower has attached with the
         // GameManager Script -> pick tower function --> TowerBtn as input(with tower prefab) --> initialize input to the ClickedBtn
-       if(!EventSystem.current.IsPointerOverGameObject() && GameManager.Instance.ClickedBtn != null)
+        if (!EventSystem.current.IsPointerOverGameObject() && GameManager.Instance.ClickedBtn != null)
         {
             if (IsEmpty && !Debugging)
             {
@@ -68,10 +71,23 @@ public class TileScript : MonoBehaviour
             {
                 ColorTile(fullColor);
             }
-            else if(Input.GetMouseButtonDown(0))
+            else if (Input.GetMouseButtonDown(0))
             {
                 PlaceTower();
             }
+        }   //when clickon a gameObject and we are not selecting a tower && tower will only be selected by cliking on it
+        else if(!EventSystem.current.IsPointerOverGameObject() && GameManager.Instance.ClickedBtn == null && Input.GetMouseButtonDown(0)){
+
+            if (myTower != null)
+            {
+                GameManager.Instance.SelectTower(myTower);
+            }
+            else {
+
+                GameManager.Instance.DeselectTower();
+            }
+
+                
         }
 
     }
@@ -95,7 +111,7 @@ public class TileScript : MonoBehaviour
         // put tiles clone to map GameObject 
         tower.transform.SetParent(transform);
 
-
+        this.myTower = tower.transform.GetChild(0).GetComponent<Tower>();
         IsEmpty = false;
         ColorTile(Color.white);
         //Call Buytower and Reset the ClickedBtn as null
