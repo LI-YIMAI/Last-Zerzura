@@ -8,8 +8,16 @@ public class TileScript : MonoBehaviour
     private Color32 fullColor = new Color32(255, 118, 118, 255);
     private Color32 emptyColor = new Color32(96, 255, 90, 255);
     private SpriteRenderer spriteRenderer;
-
+    public SpriteRenderer SpriteRenderer
+    {
+        get
+        {
+            return this.spriteRenderer;
+        }
+    }
+    public bool Debugging { get; set; }
     public bool IsEmpty { get; private set; }
+    public bool IsWalkable { get; private set; }
     public Point GridPosition{ get; private set; }
 
     public Vector2 WorldPosition_center
@@ -33,9 +41,10 @@ public class TileScript : MonoBehaviour
     }
 
   
-    public void Setup(Point gridPos, Vector3 worldPos, Transform parent,bool condition)
+    public void Setup(Point gridPos, Vector3 worldPos, Transform parent,bool condition, bool walkable)
     {
         IsEmpty = condition;
+        IsWalkable = walkable;
         this.GridPosition = gridPos;
         transform.position = worldPos;
         transform.SetParent(parent);
@@ -51,11 +60,11 @@ public class TileScript : MonoBehaviour
         // GameManager Script -> pick tower function --> TowerBtn as input(with tower prefab) --> initialize input to the ClickedBtn
        if(!EventSystem.current.IsPointerOverGameObject() && GameManager.Instance.ClickedBtn != null)
         {
-            if (IsEmpty)
+            if (IsEmpty && !Debugging)
             {
                 ColorTile(emptyColor);
             }
-            if (!IsEmpty)
+            if (!IsEmpty && !Debugging)
             {
                 ColorTile(fullColor);
             }
@@ -68,7 +77,11 @@ public class TileScript : MonoBehaviour
     }
     public void OnMouseExit()
     {
-        ColorTile(Color.white);
+        if (!Debugging)
+        {
+            ColorTile(Color.white);
+        }
+       
     }
 
     private void PlaceTower()

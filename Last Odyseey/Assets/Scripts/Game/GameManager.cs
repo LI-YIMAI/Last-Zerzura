@@ -29,6 +29,13 @@ public class GameManager : Singleton<GameManager>
 
     [SerializeField]
     private Text Goldtext;
+
+    public ObjectPool Pool { get; set; }
+
+    private void Awake()
+    {
+        Pool = GetComponent<ObjectPool>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -107,5 +114,44 @@ public class GameManager : Singleton<GameManager>
         
     }
 
-   
+    public void StartWave()
+    {
+        // user clikc Next Wave button and activate this function to call SpawnWave
+        StartCoroutine(SpawnWave());
+    }
+
+    private IEnumerator SpawnWave()
+    {
+        // call GeneratePath function in LevelManger and assigned the path to the path property in LevelManager
+        LevelManager.Instance.GeneratePath();
+        // random pick a index for MonsterPrefabs
+        // need to finish all animation for other monster, so far, we just use index 3 monster 
+        int monsterIndex = 3; //Random.Range(0, 4);
+        string type = string.Empty;
+        // according to the index to save the type of monster 
+        switch (monsterIndex)
+        {
+            case 0:
+                type = "BlueMonster";
+                break;
+            case 1:
+                type = "GreenMonster";
+                break;
+            case 2:
+                type = "PurpleMonster";
+                //type = "aba";
+                break;
+            case 3:
+                type = "RedMonster";
+                //type = "aba";
+                break;
+        }
+        // use the ObjectPool object to find the required type object and get its component Monster
+        Monster monster = Pool.GetObject(type).GetComponent<Monster>();
+        // call the spawn function in Monster script and set the Monster transform postion
+        monster.spawn();
+
+        yield return new WaitForSeconds(2.5f);
+    }
+
 }

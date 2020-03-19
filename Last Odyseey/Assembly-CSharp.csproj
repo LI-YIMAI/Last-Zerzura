@@ -63,10 +63,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Game\Astar\AStar.cs" />
+    <Compile Include="Assets\Scripts\Game\Astar\AstarDebugging.cs" />
+    <Compile Include="Assets\Scripts\Game\Astar\DebugTile.cs" />
+    <Compile Include="Assets\Scripts\Game\Astar\Node.cs" />
     <Compile Include="Assets\Scripts\Game\GameManager.cs" />
     <Compile Include="Assets\Scripts\Game\Hover.cs" />
     <Compile Include="Assets\Scripts\Game\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Monster.cs" />
+    <Compile Include="Assets\Scripts\Game\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\Game\Point.cs" />
+    <Compile Include="Assets\Scripts\Game\Portal.cs" />
     <Compile Include="Assets\Scripts\Game\Singleton.cs" />
     <Compile Include="Assets\Scripts\Game\TileScript.cs" />
     <Compile Include="Assets\Scripts\Game\TowerBtn.cs" />
