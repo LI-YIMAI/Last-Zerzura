@@ -53,7 +53,7 @@ public class Monster : MonoBehaviour
         if (remove)
         {
             Release();
-            //Destroy(gameObject);
+            
         }
     }
 
@@ -128,10 +128,12 @@ public class Monster : MonoBehaviour
         }
     }
 
+    // if the mosnter hit the protal with tag "RedPortal"
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "RedPortal")
         {
+            // pass true and release the monster 
             StartCoroutine(Scale(new Vector3(1, 1), new Vector3(0.1f, 0.1f),true));
         }
     }
@@ -141,6 +143,7 @@ public class Monster : MonoBehaviour
         IsActive = false;
         GridPosition = LevelManager.Instance.BlueSpawn;
         GameManager.Instance.Pool.ReleaseObject(gameObject);
+        GameManager.Instance.Removemonster(this);
     }
 
 }
