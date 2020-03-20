@@ -9,6 +9,7 @@ TagManager:
   - PoisionBtn
   - FireBtn
   - RedPortal
+  - Monster
   layers:
   - Default
   - TransparentFX
