@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 8426249880495613309}
   - component: {fileID: 4009217161084707757}
   - component: {fileID: 6715658679581408426}
+  - component: {fileID: 7457807842061487774}
   m_Layer: 0
   m_Name: PoisionTower
   m_TagString: Untagged
@@ -209,3 +210,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7457807842061487774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7233349963746995142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  edgeSharpness: 0

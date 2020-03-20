@@ -1,21 +1,29 @@
 ﻿<Properties StartupConfiguration="{74EB7025-5A08-3DF8-80E0-8313DEFBBE2B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Level.txt">
     <Files>
       <File FileName="Assets/Scripts/Game/GameManager.cs" Line="212" Column="2" IsPinned="True" />
-      <File FileName="Assets/Scripts/Game/Hover.cs" Line="54" Column="1" />
-      <File FileName="Assets/Scripts/Game/Tower.cs" Line="58" Column="1" />
-      <File FileName="Assets/Scripts/Game/TileScript.cs" Line="12" Column="6" />
+      <File FileName="Assets/Scripts/Game/Hover.cs" />
+      <File FileName="Assets/Scripts/Game/Tower.cs" />
+      <File FileName="Assets/Scripts/Game/TileScript.cs" />
+      <File FileName="Assets/FogOfWar/Source files/Scripts/Fow_Script.cs" Line="95" Column="13" />
+      <File FileName="Assets/Resources/Level.txt" Line="2" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Last Odyseey" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Resources" expanded="True" />
+              <Node name="FogOfWar" expanded="True">
+                <Node name="Source files" expanded="True">
+                  <Node name="Scripts" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="Level.txt" selected="True" />
+              </Node>
               <Node name="Scripts" expanded="True">
                 <Node name="Game" expanded="True">
                   <Node name="Astar" expanded="True" />
-                  <Node name="GameManager.cs" selected="True" />
                 </Node>
               </Node>
               <Node name="Zone UI" expanded="True">
@@ -32,7 +40,7 @@
     <String>Assembly-CSharp-Editor.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2f1ca09f-c473-446c-b3ef-68047cc2811e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5fd71b9f-9b08-47b8-959f-be88f9a2716a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
