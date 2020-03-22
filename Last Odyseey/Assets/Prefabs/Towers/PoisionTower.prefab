@@ -109,6 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da74fb9f1614d4c9c903a13f70fa0b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileType: PoisonProjectile
+  projectileSpeed: 3
+  attackCooldown: 3
 --- !u!1 &7233349963746995142
 GameObject:
   m_ObjectHideFlags: 0

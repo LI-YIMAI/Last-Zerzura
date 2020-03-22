@@ -208,6 +208,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da74fb9f1614d4c9c903a13f70fa0b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileType: FireProjectile
+  projectileSpeed: 3
+  attackCooldown: 3
 --- !u!58 &1489493183016238832
 CircleCollider2D:
   m_ObjectHideFlags: 0

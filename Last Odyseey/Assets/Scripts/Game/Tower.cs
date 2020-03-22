@@ -5,16 +5,40 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
 
+    // This is the projectiles type
+    [SerializeField]
+    private string projectileType;
+
+    [SerializeField]
+    private float projectileSpeed;
+
+    public float ProjectileSpeed { get { return projectileSpeed; } }
+
     private SpriteRenderer mySpriteRenderer;
 
 
+    private Animator myAnimator;
+
     private Monster target;
+
+    public Monster Target { get { return target; } }
+
+    
 
     private Queue<Monster> monsters = new Queue<Monster>();
 
+    private bool canAttack = true;
+
+
+    private float attackTimer;
+
+    [SerializeField]
+    private float attackCooldown;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+
+        myAnimator = transform.parent.GetComponent<Animator>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -31,10 +55,37 @@ public class Tower : MonoBehaviour
 
     public void Attack() {
 
-        if(target == null && monsters.Count > 0)
+        if (!canAttack)//If we can't attack
+        {
+            //Count how much time has passed since last attack
+            attackTimer += Time.deltaTime;
+
+            //If the time passed is higher than the cooldown, then we need to reset
+            //and be able to attack again
+            if (attackTimer >= attackCooldown)
+            {
+                canAttack = true;
+                attackTimer = 0;
+            }
+        }
+        if (target == null && monsters.Count > 0)
         {
             target = monsters.Dequeue();
             
+        }
+
+        if (target != null && target.IsActive)
+        {
+            if (target != null && target.IsActive)//If we have a target that is active
+            {
+                if (canAttack)//If we can attack then we shoot at the target
+                {
+                    Shoot();
+                    myAnimator.SetTrigger("Attack");
+                    canAttack = false;
+                }
+
+            }
         }
     }
     public void OnTriggerEnter2D(Collider2D other)
@@ -53,5 +104,14 @@ public class Tower : MonoBehaviour
             target = null;
         }
 
+    }
+
+
+    private void Shoot() {
+
+        Projectile projectile = GameManager.Instance.Pool.GetObject(projectileType).GetComponent<Projectile>();
+        projectile.transform.position = transform.position;
+
+        projectile.Initialize(this);
     }
 }
