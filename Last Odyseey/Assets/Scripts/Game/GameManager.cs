@@ -72,8 +72,9 @@ public class GameManager : Singleton<GameManager>
         shandow_tower_check();
         if (selectedTower != null)
         {
-            int extra_price = selectedTower.Count - 2;
+            int extra_price = selectedTower.Count - 1;
             sellText.text = "+ " + ((selectedTower.Price / 2) + extra_price).ToString();
+            upgradeText.text = "- " + (selectedTower.Price * selectedTower.Count).ToString();
         }
     }
     public void PickTower(TowerBtn towerBtn)
@@ -121,13 +122,18 @@ public class GameManager : Singleton<GameManager>
     {
         if (selectedTower != null)
         {
-            if(Gold == 0 || Gold < selectedTower.Price * selectedTower.Count)
-        {
-                GameObject upgrade = GameObject.FindGameObjectWithTag("UpgradeBtn");
-                Image img = upgrade.GetComponent<Image>();
-                Button btn = upgrade.GetComponent<Button>();
+            GameObject upgrade = GameObject.FindGameObjectWithTag("UpgradeBtn");
+            Image img = upgrade.GetComponent<Image>();
+            Button btn = upgrade.GetComponent<Button>();
+            if (Gold == 0 || Gold < selectedTower.Price * selectedTower.Count)
+            {   
                 img.color = new Color32(176, 118, 118, 255);
                 btn.enabled = false;
+            }
+            else
+            {
+                img.color = Color.white;
+                btn.enabled = true;
             }
         }
         
@@ -243,9 +249,9 @@ public class GameManager : Singleton<GameManager>
         selectedTower.Select();
         //if selected, show up
         //check if the tower has upgraded and calculate the sell price with upgrade
-        int extra_price = selectedTower.Count - 2;
-        sellText.text = "+ " + ((selectedTower.Price / 2)+extra_price).ToString();
-        upgradeText.text = "- " + (selectedTower.Price * 2).ToString();
+       // int extra_price = selectedTower.Count - 1;
+        //sellText.text = "+ " + ((selectedTower.Price / 2)+extra_price).ToString();
+        //upgradeText.text = "- " + (selectedTower.Price * selectedTower.Count).ToString();
         upgradePanel.SetActive(true);
     }
 
@@ -262,7 +268,7 @@ public class GameManager : Singleton<GameManager>
     {
         if (selectedTower != null)
         {
-            int extra_price = selectedTower.Count - 2;
+            int extra_price = selectedTower.Count - 1;
             //sell the 
             Gold += ((selectedTower.Price / 2)+extra_price);
             selectedTower.GetComponentInParent<TileScript>().IsEmpty = true;

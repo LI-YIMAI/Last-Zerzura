@@ -115,7 +115,7 @@ public class TileScript : MonoBehaviour
         IsEmpty = false;
         ColorTile(Color.white);
         myTower.Price = GameManager.Instance.ClickedBtn.Price;
-        myTower.Count = 2;
+        myTower.Count = 1;
         //Call Buytower and Reset the ClickedBtn as null
         GameManager.Instance.Buytower();
 
