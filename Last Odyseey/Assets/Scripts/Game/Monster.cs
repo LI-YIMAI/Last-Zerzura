@@ -12,22 +12,39 @@ public class Monster : MonoBehaviour
     public Point GridPosition { get; set; }
 
     private Vector3 destination;
-
+    private SpriteRenderer spriteRenderer;
     public bool IsActive { get; set; }
-
+    public bool Alive
+    {
+        get
+        {
+            return health.CurrentValue > 0;
+        }
+    }
     private Animator myAnimator;
-
+    [SerializeField]
+    private Stat health;
+    private void Awake()
+    {
+        //sets up references to the components
+        myAnimator = GetComponent<Animator>();
+        health.Initialize();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
     private void Update()
     {
         // been called per frame
         Move();
     }
-    public void spawn()
+    public void spawn(int health)
     {
         // set the start spqwn position
         transform.position = LevelManager.Instance.BluePortal.transform.position;
+        this.health.Bar.Reset();
+        this.health.MaxVal = health;
+        this.health.CurrentValue = this.health.MaxVal;
         // get the animator component
-        myAnimator = GetComponent<Animator>();
+        //myAnimator = GetComponent<Animator>();
         // starts to scale the monster 
         StartCoroutine(Scale(new Vector3(0.1f, 0.1f), new Vector3(1, 1), false));
         // once finished scaling the monster, we set the monster path which will be passed from LevelManager
@@ -136,14 +153,37 @@ public class Monster : MonoBehaviour
             // pass true and release the monster 
             StartCoroutine(Scale(new Vector3(1, 1), new Vector3(0.1f, 0.1f),true));
         }
+        if (other.tag == "Tile")
+        {
+            spriteRenderer.sortingOrder = other.GetComponent<TileScript>().GridPosition.Y;
+        }
     }
 
-    private void Release()
+    public void Release()
     {
+        
         IsActive = false;
+        //set correct start position
         GridPosition = LevelManager.Instance.BlueSpawn;
+        //remove monster from the game
         GameManager.Instance.Pool.ReleaseObject(gameObject);
+        //Releases the object in the object pool
         GameManager.Instance.Removemonster(this);
     }
-
+    //taking damage
+    public void TakeDamage(int damage)
+    {
+        if (IsActive)
+        {
+            health.CurrentValue -= damage;
+            if(health.CurrentValue <= 0)
+            {
+                GameManager.Instance.Gold += 2;
+                myAnimator.SetTrigger("Die");
+                IsActive = false;
+                GetComponent<SpriteRenderer>().sortingOrder--;
+            }
+        }
+        
+    }
 }

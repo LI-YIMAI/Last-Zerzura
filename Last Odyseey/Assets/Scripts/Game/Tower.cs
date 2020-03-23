@@ -18,12 +18,18 @@ public class Tower : MonoBehaviour
 
 
     private Animator myAnimator;
-
+    [SerializeField]
+    private int damage;
+    //the price set from tile script when palcing tower 
+    public int Price { get; set; }
+    //The upgrade count set from tile script when placing tower ; default number 2
+    //each time for upgrading, the Count number will + 1;
+    public int Count { get; set; }
     private Monster target;
 
     public Monster Target { get { return target; } }
 
-    
+
 
     private Queue<Monster> monsters = new Queue<Monster>();
 
@@ -46,13 +52,23 @@ public class Tower : MonoBehaviour
     void Update()
     {
         Attack();
-        Debug.Log(target);
+        //        Debug.Log(target);
     }
 
     public void Select() {
         mySpriteRenderer.enabled = !mySpriteRenderer.enabled;
     }
-
+    public int Damage
+    {
+        get
+        {
+            return damage;
+        }
+        set
+        {
+            this.damage = value;
+        }
+    }
     public void Attack() {
 
         if (!canAttack)//If we can't attack
@@ -87,6 +103,14 @@ public class Tower : MonoBehaviour
 
             }
         }
+        else if (monsters.Count>0)
+        {
+            target = monsters.Dequeue();
+        }
+        if(target!=null && !target.Alive || target!=null&&!target.IsActive)
+        {
+            target = null; 
+        }
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -105,8 +129,6 @@ public class Tower : MonoBehaviour
         }
 
     }
-
-
     private void Shoot() {
 
         Projectile projectile = GameManager.Instance.Pool.GetObject(projectileType).GetComponent<Projectile>();

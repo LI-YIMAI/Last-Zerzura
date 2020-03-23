@@ -39,8 +39,14 @@ public class GameManager : Singleton<GameManager>
     private GameObject wavebtn;
     [SerializeField]
     private Text Goldtext;
+    [SerializeField]
+    private Text sellText;
+    [SerializeField]
+    private Text upgradeText;
+    private int health = 15;
     private List<Monster> Activemonster = new List<Monster >();
-
+    [SerializeField]
+    private GameObject upgradePanel;
 
     //current selected Tower
     public Tower selectedTower;
@@ -56,13 +62,19 @@ public class GameManager : Singleton<GameManager>
     void Start()
     {
         // set the Gold to 5 and assign it to Goldtext 
-        Gold = 10;
+        Gold = 20;
     }
 
     // Update is called once per frame
     void Update()
     {
         HandleEscape();
+        shandow_tower_check();
+        if (selectedTower != null)
+        {
+            int extra_price = selectedTower.Count - 2;
+            sellText.text = "+ " + ((selectedTower.Price / 2) + extra_price).ToString();
+        }
     }
     public void PickTower(TowerBtn towerBtn)
     {
@@ -87,12 +99,12 @@ public class GameManager : Singleton<GameManager>
         {
             Gold -= ClickedBtn.Price;
             Hover.Instance.Deactivate();
-            shandow_tower_check();
+            //shandow_tower_check();
         }
         else
         {
             Hover.Instance.Deactivate();
-            shandow_tower_check();
+            //shandow_tower_check();
         }   
     }
 
@@ -107,6 +119,18 @@ public class GameManager : Singleton<GameManager>
 
     public void shandow_tower_check()
     {
+        if (selectedTower != null)
+        {
+            if(Gold == 0 || Gold < selectedTower.Price * selectedTower.Count)
+        {
+                GameObject upgrade = GameObject.FindGameObjectWithTag("UpgradeBtn");
+                Image img = upgrade.GetComponent<Image>();
+                Button btn = upgrade.GetComponent<Button>();
+                img.color = new Color32(176, 118, 118, 255);
+                btn.enabled = false;
+            }
+        }
+        
         //Get gameobject for all button save as TowerBtn
         //Check if the btn.price is greater than the current gold we have
         //Yes -> shandow button
@@ -119,17 +143,31 @@ public class GameManager : Singleton<GameManager>
         {
             Poision.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
         }
+        else
+        {
+            Poision.GetComponent<Image>().color = Color.white;
+        }
         if (Gold < 3)
         {
             Frozen.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
             Fire.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
         }
+        else
+        {
+            Frozen.GetComponent<Image>().color = Color.white;
+            Fire.GetComponent<Image>().color = Color.white;
+        }
         if (Gold < 2)
         {
             Storm.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
         }
+        else
+        {
+            Storm.GetComponent<Image>().color = Color.white;
+        }
         
     }
+    
 
     public void StartWave()
     {
@@ -173,7 +211,12 @@ public class GameManager : Singleton<GameManager>
             // use the ObjectPool object to find the required type object and get its component Monster
             Monster monster = Pool.GetObject(type).GetComponent<Monster>();
             // call the spawn function in Monster script and set the Monster transform postion
-            monster.spawn();
+            monster.spawn(health);
+            // difficulty 
+            if (wave % 3 == 0)
+            {
+                health += 5;
+            }
             // add active monster to the list 
             Activemonster.Add(monster);
 
@@ -198,6 +241,12 @@ public class GameManager : Singleton<GameManager>
         }
         selectedTower = tower;
         selectedTower.Select();
+        //if selected, show up
+        //check if the tower has upgraded and calculate the sell price with upgrade
+        int extra_price = selectedTower.Count - 2;
+        sellText.text = "+ " + ((selectedTower.Price / 2)+extra_price).ToString();
+        upgradeText.text = "- " + (selectedTower.Price * 2).ToString();
+        upgradePanel.SetActive(true);
     }
 
     public void DeselectTower() {
@@ -205,8 +254,35 @@ public class GameManager : Singleton<GameManager>
         if (selectedTower != null) {
             selectedTower.Select();
         }
-
+        //if unselect, dispear 
+        upgradePanel.SetActive(false);
         selectedTower = null;
+    }
+    public void SellTower()
+    {
+        if (selectedTower != null)
+        {
+            int extra_price = selectedTower.Count - 2;
+            //sell the 
+            Gold += ((selectedTower.Price / 2)+extra_price);
+            selectedTower.GetComponentInParent<TileScript>().IsEmpty = true;
+            Destroy(selectedTower.transform.parent.gameObject);
+            DeselectTower();
+        }
+    }
+    public void upgradeTower()
+    {
+        
+        if (selectedTower != null)
+        {
+            Debug.Log(Gold);
+            int num = selectedTower.Count;
+            Debug.Log(num);
+            Gold -= (selectedTower.Price * num);
+            Debug.Log(Gold);
+            selectedTower.Damage = selectedTower.Damage * selectedTower.Count;
+            selectedTower.Count++;
+        }
     }
 
 }

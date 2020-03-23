@@ -103,15 +103,26 @@ public class LevelManager : Singleton<LevelManager>
         //int tileIndex = int.Parse(tileType);
         bool empty;
         bool walkable;
-        if (tileType=='d'||tileType=='e')
+        //e, f prefab is monster path
+        if (tileType == 'e' || tileType == 'f')
         {
             empty = false;
             walkable = true;
         }
         else
         {
-            empty = true;
-            walkable = false;
+            // tile for tower 
+            if(tileType == 'b')
+            {
+                empty = true;
+                walkable = false;
+            }
+            else
+            {
+                empty = false;
+                walkable = false;
+            }
+            
         }
         // create TileScript object 
         TileScript newTile = Instantiate(dic_Prefabs[tileType]).GetComponent<TileScript>();

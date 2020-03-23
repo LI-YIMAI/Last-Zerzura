@@ -16,7 +16,7 @@ public class TileScript : MonoBehaviour
         }
     }
     public bool Debugging { get; set; }
-    public bool IsEmpty { get; private set; }
+    public bool IsEmpty { get;  set; }
     public bool IsWalkable { get; private set; }
     public Point GridPosition{ get; private set; }
 
@@ -63,11 +63,11 @@ public class TileScript : MonoBehaviour
         // GameManager Script -> pick tower function --> TowerBtn as input(with tower prefab) --> initialize input to the ClickedBtn
         if (!EventSystem.current.IsPointerOverGameObject() && GameManager.Instance.ClickedBtn != null)
         {
-            if (IsEmpty && !Debugging)
+            if (IsEmpty&& !Debugging)
             {
                 ColorTile(emptyColor);
             }
-            if (!IsEmpty && !Debugging)
+            if (!IsEmpty&& !Debugging)
             {
                 ColorTile(fullColor);
             }
@@ -93,11 +93,11 @@ public class TileScript : MonoBehaviour
     }
     public void OnMouseExit()
     {
-        if (!Debugging)
+        if (!Debugging && GameManager.Instance.ClickedBtn != null)
         {
             ColorTile(Color.white);
         }
-       
+
     }
 
     private void PlaceTower()
@@ -114,6 +114,8 @@ public class TileScript : MonoBehaviour
         this.myTower = tower.transform.GetChild(0).GetComponent<Tower>();
         IsEmpty = false;
         ColorTile(Color.white);
+        myTower.Price = GameManager.Instance.ClickedBtn.Price;
+        myTower.Count = 2;
         //Call Buytower and Reset the ClickedBtn as null
         GameManager.Instance.Buytower();
 

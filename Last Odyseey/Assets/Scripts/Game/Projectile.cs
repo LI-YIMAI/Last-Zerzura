@@ -10,9 +10,10 @@ public class Projectile : MonoBehaviour
 
     private Tower parent;
 
+    private Animator myAnimator;
     void Start()
     {
-        
+        myAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -42,6 +43,19 @@ public class Projectile : MonoBehaviour
         else if (!target.IsActive)
         {
             GameManager.Instance.Pool.ReleaseObject(gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Monster")
+        {
+            if(target.gameObject == other.gameObject)
+            {
+                // parent has reference to tower 
+                target.TakeDamage(parent.Damage);
+                myAnimator.SetTrigger("Impact");
+                
+            }
         }
     }
 }

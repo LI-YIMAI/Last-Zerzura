@@ -210,7 +210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileType: FireProjectile
   projectileSpeed: 3
-  attackCooldown: 3
+  damage: 5
+  attackCooldown: 1
 --- !u!58 &1489493183016238832
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -1,8 +1,21 @@
 ﻿<Properties StartupConfiguration="{74EB7025-5A08-3DF8-80E0-8313DEFBBE2B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/Tower.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/TowerBtn.cs">
     <Files>
-      <File FileName="Assets/Scripts/Game/Tower.cs" Line="61" Column="19" />
-      <File FileName="Assets/Scripts/Game/Projectile.cs" Line="5" Column="24" />
+      <File FileName="Assets/Scripts/Game/Tower.cs" Line="69" Column="33" />
+      <File FileName="Assets/Scripts/Game/Projectile.cs" Line="57" Column="17" />
+      <File FileName="Assets/Scripts/Game/Hover.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Game/TileScript.cs" Line="118" Column="27" />
+      <File FileName="Assets/FogOfWar/Source files/Scripts/Fow_Script.cs" Line="21" Column="38" />
+      <File FileName="Assets/FogOfWar/Source files/Scripts/FowUnit.cs" Line="6" Column="27" />
+      <File FileName="Assets/Scripts/Game/Monster.cs" Line="158" Column="91" />
+      <File FileName="Assets/Scripts/Game/GameManager.cs" Line="257" Column="10" />
+      <File FileName="Assets/Scripts/Game/ObjectPool.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HealthBar/BarScript.cs" Line="104" Column="26" />
+      <File FileName="Assets/ImpactBehaviour.cs" Line="22" Column="70" />
+      <File FileName="Assets/DeathBehaviour.cs" Line="22" Column="52" />
+      <File FileName="Assets/Scripts/HealthBar/Stat.cs" Line="69" Column="24" />
+      <File FileName="Assets/Scripts/Game/LevelManager.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/Game/TowerBtn.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,8 +31,9 @@
               <Node name="Scripts" expanded="True">
                 <Node name="Game" expanded="True">
                   <Node name="Astar" expanded="True" />
-                  <Node name="Tower.cs" selected="True" />
+                  <Node name="TowerBtn.cs" selected="True" />
                 </Node>
+                <Node name="HealthBar" expanded="True" />
               </Node>
               <Node name="Zone UI" expanded="True">
                 <Node name="Scripts" expanded="True" />
@@ -35,7 +49,7 @@
     <String>Assembly-CSharp-Editor.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f2a608f8-06eb-409a-aba6-beb51724f017" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0a27e903-4c5b-4b9f-9a66-39bdeedc87a3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -111,6 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileType: FrostProjectile
   projectileSpeed: 3
+  damage: 5
   attackCooldown: 3
 --- !u!1 &8415869954045125653
 GameObject:
