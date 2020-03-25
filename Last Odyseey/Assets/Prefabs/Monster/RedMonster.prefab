@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8564430301790873224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 1320767061}
   m_Father: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c75a6d90ad1234043bedbb792435bdf1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 051a55e8cd31c40cea164e5d26a61845, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -137,7 +137,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2066667, y: 1.2}
+    oldSize: {x: 7.413333, y: 5.56}
     newSize: {x: 1.2066667, y: 1.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -174,6 +174,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6161136349682386951}
     m_Modifications:
+    - target: {fileID: 6901339513824953582, guid: 358ff0f1a62dd45c28ca07ef3d1b2a9d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 57.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6901339513824953582, guid: 358ff0f1a62dd45c28ca07ef3d1b2a9d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.38
+      objectReference: {fileID: 0}
     - target: {fileID: 6901339514050693762, guid: 358ff0f1a62dd45c28ca07ef3d1b2a9d,
         type: 3}
       propertyPath: m_SortingOrder
@@ -237,12 +247,12 @@ PrefabInstance:
     - target: {fileID: 6901339514050693773, guid: 358ff0f1a62dd45c28ca07ef3d1b2a9d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.08
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 6901339514050693773, guid: 358ff0f1a62dd45c28ca07ef3d1b2a9d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.89
+      value: 2.97
       objectReference: {fileID: 0}
     - target: {fileID: 6901339514050693773, guid: 358ff0f1a62dd45c28ca07ef3d1b2a9d,
         type: 3}
