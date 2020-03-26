@@ -191,10 +191,10 @@ public class GameManager : Singleton<GameManager>
         LevelManager.Instance.GeneratePath();
         // spawnwave based on wave number or level number 
         for (int i = 0; i < wave; i++)
-        {           
+        {
             // random pick a index for MonsterPrefabs
             // need to finish all animation for other monster, so far, we just use index 3 monster 
-            int monsterIndex = 3; //Random.Range(0, 4);
+            int monsterIndex = Random.Range(1, 4);
             string type = string.Empty;
             // according to the index to save the type of monster 
             switch (monsterIndex)

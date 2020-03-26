@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 114321284880997392}
   - component: {fileID: 61053826725466962}
   - component: {fileID: 50399628393600964}
+  - component: {fileID: 95047269035775642}
   m_Layer: 0
   m_Name: GreenMonster
   m_TagString: Monster
@@ -147,6 +148,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &95047269035775642
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6585003787279142800}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6887712ed439443d1895c462992b9d9a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &7953134224675937280
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ TagManager:
   - Monster
   - Tile
   - UpgradeBtn
+  - moutain
   layers:
   - Default
   - TransparentFX

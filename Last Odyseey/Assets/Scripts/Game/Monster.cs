@@ -179,6 +179,7 @@ public class Monster : MonoBehaviour
             if(health.CurrentValue <= 0)
             {
                 GameManager.Instance.Gold += 2;
+                // go to death state
                 myAnimator.SetTrigger("Die");
                 IsActive = false;
                 GetComponent<SpriteRenderer>().sortingOrder--;

@@ -124,9 +124,16 @@ public class LevelManager : Singleton<LevelManager>
             }
             
         }
-        // create TileScript object 
+        // create TileScript object
+        
         TileScript newTile = Instantiate(dic_Prefabs[tileType]).GetComponent<TileScript>();
-
+        if (tileType == 'a')
+        {
+            //newTile.GetComponentInChildren<SpriteRenderer>().sortingOrder = y;
+            GameObject child =  newTile.transform.GetChild(0).gameObject;
+            child.GetComponent<SpriteRenderer>().sortingOrder = y;
+        }
+        
         // call Setup which is kind like constructor, it will save grid postion, world postion,
         // and add it to dictionary<point, tilescript> for each newTile
         newTile.Setup(new Point(x, y), new Vector3(worldStart.x + (TileSize * x), worldStart.y - (TileSize * y), 0), map, empty,walkable);
