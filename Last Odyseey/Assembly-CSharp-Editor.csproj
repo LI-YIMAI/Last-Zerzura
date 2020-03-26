@@ -65,46 +65,46 @@
   <ItemGroup>
     <Compile Include="Assets\Zone UI\Editor\InitZoneUI.cs" />
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Triangle.Runtime">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Triangle.Runtime.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -341,22 +341,22 @@
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/PackageCache/com.unity.2d.common@1.0.11-preview.1/Tests/Editor/Lib/NSubstitute/NSubstitute.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/PackageCache/com.unity.2d.common@1.0.11-preview.1/Tests/Editor/Lib/NSubstitute/NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>/Users/yimaili/Desktop/comp3004/version3/COMP3004/Last Odyseey/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>/Users/onlylovefox/Documents/Github/COMP3004/Last Odyseey/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

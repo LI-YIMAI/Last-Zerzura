@@ -311,7 +311,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000024199, y: -26.3}
+  m_AnchoredPosition: {x: 0.000024199, y: -49.1}
   m_SizeDelta: {x: 53.49, y: 17.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &315082206
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20879316, g: 0.29554442, b: 0.6415094, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d2f6fe3e6de02452ea5b3b49252c088f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c264a06a909a8494ea82c2128fcdac51, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 3747567967849484325, guid: 51df93edbb1224c40ad272df3de40f66,
     type: 3}
-  sprite: {fileID: 21300000, guid: e3e58e7b3f3cc4af1b58ddba4cdb6824, type: 3}
+  sprite: {fileID: 21300000, guid: 3741d00cad0c3492689bdba238371b7d, type: 3}
   price: 2
   pricetext: {fileID: 315082206}
 --- !u!1 &445430009
@@ -893,7 +893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000024199, y: -26.4}
+  m_AnchoredPosition: {x: 0.000024199, y: -47.6}
   m_SizeDelta: {x: 53.49, y: 17.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &606974573
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20879316, g: 0.29554442, b: 0.6415094, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1425,7 +1425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1020985653
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1441,10 +1441,10 @@ RectTransform:
   m_Father: {fileID: 1334624284}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 86.4, y: -398.09}
+  m_SizeDelta: {x: 70, y: 94.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1020985654
 MonoBehaviour:
@@ -1703,7 +1703,7 @@ MonoBehaviour:
   m_ChildAlignment: 8
   m_StartCorner: 0
   m_StartAxis: 1
-  m_CellSize: {x: 70, y: 80}
+  m_CellSize: {x: 70, y: 94.2}
   m_Spacing: {x: 0, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -2276,7 +2276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1658358272
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2292,10 +2292,10 @@ RectTransform:
   m_Father: {fileID: 1334624284}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 86.4, y: -398.09003}
+  m_SizeDelta: {x: 70, y: 94.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1658358273
 MonoBehaviour:
@@ -2509,7 +2509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd824e9a264214243b6de67bf6f23805, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86d3d33c49c06420db50fe6f99eaaae0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2540,7 +2540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 8415869954045125653, guid: b19a03d5047c84fc8bbc845a9dbd3bd7,
     type: 3}
-  sprite: {fileID: 21300000, guid: c3071fce70d1544608529cebb0e8e79b, type: 3}
+  sprite: {fileID: 21300000, guid: ffdb89a9a19c94c6f97fee61baeccf46, type: 3}
   price: 3
   pricetext: {fileID: 606974574}
 --- !u!1 &1682700542
