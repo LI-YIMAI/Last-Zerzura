@@ -8,4 +8,8 @@ public class GameStaticValue : MonoBehaviour
 
     static public int playerHealth = 0;
 
+    static public float currentMusicVol = 0.23f;
+
+
+
 }
