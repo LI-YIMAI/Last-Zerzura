@@ -26,7 +26,9 @@ public class Tower : MonoBehaviour
     //each time for upgrading, the Count number will + 1;
     public int Count { get; set; }
     private Monster target;
-
+    //default value 0, will increase once user click the upgrade button.
+    [SerializeField]
+    public int speed_debuff_count;
     public Monster Target { get { return target; } }
 
 
@@ -67,6 +69,18 @@ public class Tower : MonoBehaviour
         set
         {
             this.damage = value;
+        }
+    }
+    public int Debuff_speed
+    {
+        get
+        {
+            return speed_debuff_count;
+        }
+
+        set
+        {
+            this.speed_debuff_count = value;
         }
     }
     public void Attack() {

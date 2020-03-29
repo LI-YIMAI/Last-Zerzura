@@ -160,7 +160,9 @@ public class LevelManager : Singleton<LevelManager>
         BluePortal.name = "BluePortal";
 
 
-        redSpawn = new Point(11, 6);
+        //redSpawn = new Point(11, 6);
+        redSpawn = new Point(1, 1);
+
         Instantiate(redPortalPrefab, Tiles[redSpawn].GetComponent<TileScript>().WorldPosition_center, Quaternion.identity);
         
 

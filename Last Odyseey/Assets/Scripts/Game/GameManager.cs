@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class GameManager : Singleton<GameManager>
 {
-    
-    
+
+
 
     public TowerBtn ClickedBtn { get; set; }
 
@@ -21,18 +21,24 @@ public class GameManager : Singleton<GameManager>
         {
             // update gold value for script and ui text 
             this.gold = value;
-            this.Goldtext.text = value.ToString() + " <color=lime>$</color>"; 
+            this.Goldtext.text = value.ToString() + " <color=lime>$</color>";
         }
     }
     // property
     public bool WaveActive
     {
         get { return Activemonster.Count > 0; }
-         
+
     }
 
     private int gold;
     private int wave = 0;
+    private int lives;
+    private bool gameOver = false;
+    [SerializeField]
+    private GameObject gameOverMenu;
+    [SerializeField]
+    private Text livesText;
     [SerializeField]
     private Text WaveTxt; // this will have a referece for the actual waveTxt
     [SerializeField]
@@ -44,15 +50,41 @@ public class GameManager : Singleton<GameManager>
     [SerializeField]
     private Text upgradeText;
     private int health = 15;
-    private List<Monster> Activemonster = new List<Monster >();
+    private List<Monster> Activemonster = new List<Monster>();
     [SerializeField]
     private GameObject upgradePanel;
+
+    [SerializeField]
+    private GameObject inGameMenu;
 
     //current selected Tower
     public Tower selectedTower;
 
 
     public ObjectPool Pool { get; set; }
+
+
+    [SerializeField]
+    private AudioSource backgroundMusic;
+
+    public int Lives
+    {
+        get
+        {
+            return lives;
+
+        }
+        set {
+            this.lives = value;
+            if (lives <= 0)
+            {
+                this.lives = 0;
+                GameOver();
+            }
+            livesText.text = value.ToString();
+
+        }
+    }
 
     private void Awake()
     {
@@ -61,9 +93,14 @@ public class GameManager : Singleton<GameManager>
     // Start is called before the first frame update
     void Start()
     {
-        // set the Gold to 5 and assign it to Goldtext 
+        // set the Gold to 5 and assign it to Goldtext
+        Lives = 10;
         Gold = 20;
+        backgroundMusic.volume = GameStaticValue.currentMusicVol;
+
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -79,12 +116,12 @@ public class GameManager : Singleton<GameManager>
     }
     public void PickTower(TowerBtn towerBtn)
     {
-        
+
         // check if have enough gold to buy a tower 
         if (Gold >= towerBtn.Price && !WaveActive)
         {
             this.ClickedBtn = towerBtn;
-            Hover.Instance.Activate(towerBtn.Sprite);  
+            Hover.Instance.Activate(towerBtn.Sprite);
         }
         if (Gold == 0 || Gold < towerBtn.Price)
         {
@@ -95,7 +132,7 @@ public class GameManager : Singleton<GameManager>
     public void Buytower()
     {
         // reduce the gold when placing the tower
-        
+
         if (Gold >= ClickedBtn.Price)
         {
             Gold -= ClickedBtn.Price;
@@ -106,7 +143,7 @@ public class GameManager : Singleton<GameManager>
         {
             Hover.Instance.Deactivate();
             //shandow_tower_check();
-        }   
+        }
     }
 
     public void HandleEscape()
@@ -126,7 +163,7 @@ public class GameManager : Singleton<GameManager>
             Image img = upgrade.GetComponent<Image>();
             Button btn = upgrade.GetComponent<Button>();
             if (Gold == 0 || Gold < selectedTower.Price * selectedTower.Count)
-            {   
+            {
                 img.color = new Color32(176, 118, 118, 255);
                 btn.enabled = false;
             }
@@ -136,32 +173,32 @@ public class GameManager : Singleton<GameManager>
                 btn.enabled = true;
             }
         }
-        
+
         //Get gameobject for all button save as TowerBtn
         //Check if the btn.price is greater than the current gold we have
         //Yes -> shandow button
         //Else no
         TowerBtn Storm = GameObject.FindGameObjectWithTag("StormBtn").GetComponent<TowerBtn>();
         TowerBtn Frozen = GameObject.FindGameObjectWithTag("FrozBtn").GetComponent<TowerBtn>();
-        //TowerBtn Poision = GameObject.FindGameObjectWithTag("PoisionBtn").GetComponent<TowerBtn>();
+//        TowerBtn Poision = GameObject.FindGameObjectWithTag("PoisionBtn").GetComponent<TowerBtn>();
 //        TowerBtn Fire = GameObject.FindGameObjectWithTag("FireBtn").GetComponent<TowerBtn>();
-        if(Gold < 5)
-        {
-            //Poision.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
-        }
-        else
-        {
-            //Poision.GetComponent<Image>().color = Color.white;
-        }
+        //if (Gold < 5)
+        //{
+        //    Poision.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
+        //}
+        //else
+        //{
+        //    Poision.GetComponent<Image>().color = Color.white;
+        //}
         if (Gold < 3)
         {
             Frozen.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
-//            Fire.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
+          //  Fire.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
         }
         else
         {
             Frozen.GetComponent<Image>().color = Color.white;
-     //       Fire.GetComponent<Image>().color = Color.white;
+         //   Fire.GetComponent<Image>().color = Color.white;
         }
         if (Gold < 2)
         {
@@ -171,18 +208,20 @@ public class GameManager : Singleton<GameManager>
         {
             Storm.GetComponent<Image>().color = Color.white;
         }
-        
+
     }
-    
+
 
     public void StartWave()
     {
         wave++;
-        WaveTxt.text = string.Format("Level: <color=lime>{0}</color>",wave);
+        WaveTxt.text = string.Format("Level: <color=lime>{0}</color>", wave);
         // user clikc Next Wave button and activate this function to call SpawnWave
         StartCoroutine(SpawnWave());
         wavebtn.SetActive(false);
     }
+
+
 
     private IEnumerator SpawnWave()
     {
@@ -194,7 +233,7 @@ public class GameManager : Singleton<GameManager>
         {
             // random pick a index for MonsterPrefabs
             // need to finish all animation for other monster, so far, we just use index 3 monster 
-            int monsterIndex = Random.Range(1, 4);
+            int monsterIndex = 1;//Random.Range(1, 4);
             string type = string.Empty;
             // according to the index to save the type of monster 
             switch (monsterIndex)
@@ -228,36 +267,40 @@ public class GameManager : Singleton<GameManager>
 
             yield return new WaitForSeconds(2.5f);
         }
-        
+
     }
     public void Removemonster(Monster monster)
     {
         Activemonster.Remove(monster);
         // when there is no active monster, we need show the wave button 
-        if (!WaveActive)
+        if (!WaveActive && !gameOver)
         {
             wavebtn.SetActive(true);
         }
     }
 
-    public void SelectTower(Tower tower) {
+    public void SelectTower(Tower tower)
+    {
 
-        if (selectedTower != null) {
+        if (selectedTower != null)
+        {
             selectedTower.Select();
         }
         selectedTower = tower;
         selectedTower.Select();
         //if selected, show up
         //check if the tower has upgraded and calculate the sell price with upgrade
-       // int extra_price = selectedTower.Count - 1;
+        // int extra_price = selectedTower.Count - 1;
         //sellText.text = "+ " + ((selectedTower.Price / 2)+extra_price).ToString();
         //upgradeText.text = "- " + (selectedTower.Price * selectedTower.Count).ToString();
         upgradePanel.SetActive(true);
     }
 
-    public void DeselectTower() {
+    public void DeselectTower()
+    {
 
-        if (selectedTower != null) {
+        if (selectedTower != null)
+        {
             selectedTower.Select();
         }
         //if unselect, dispear 
@@ -270,7 +313,7 @@ public class GameManager : Singleton<GameManager>
         {
             int extra_price = selectedTower.Count - 1;
             //sell the 
-            Gold += ((selectedTower.Price / 2)+extra_price);
+            Gold += ((selectedTower.Price / 2) + extra_price);
             selectedTower.GetComponentInParent<TileScript>().IsEmpty = true;
             Destroy(selectedTower.transform.parent.gameObject);
             DeselectTower();
@@ -278,7 +321,7 @@ public class GameManager : Singleton<GameManager>
     }
     public void upgradeTower()
     {
-        
+
         if (selectedTower != null)
         {
             Debug.Log(Gold);
@@ -287,8 +330,99 @@ public class GameManager : Singleton<GameManager>
             Gold -= (selectedTower.Price * num);
             Debug.Log(Gold);
             selectedTower.Damage = selectedTower.Damage * selectedTower.Count;
+            //set debuff value
+            //if (selectedTower.Count < 3)
+            //{
+            //    selectedTower.speed_debuff_value = selectedTower
+            //    Debug.Log(selectedTower.speed_debuff_value);
+            //}
+            
+            
+            
             selectedTower.Count++;
         }
     }
+
+    public void GameOver()
+    {
+        if (!gameOver)
+        {
+            gameOver = true;
+            gameOverMenu.SetActive(true);
+        }
+    }
+
+    public void ShowInGameMenu()
+    {
+        inGameMenu.SetActive(!inGameMenu.activeSelf);
+        //tutorial video
+        if (!inGameMenu.activeSelf)
+        {
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
+        }
+    }
+
+    public void reloadGame()
+    {
+        inGameMenu.SetActive(!inGameMenu.activeSelf);
+        //tutorial video
+        if (!inGameMenu.activeSelf)
+        {
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
+        }
+        //reload the game, go to next level
+        GameStaticValue.currentScene = 2; //GameStaticValue saves all values that pass through different scenes
+        SceneManager.LoadScene(1); // Scene 1 is the loading screen
+    }
+
+    public void exitToMainMenu()
+    {
+        inGameMenu.SetActive(!inGameMenu.activeSelf);
+        //tutorial video
+        if (!inGameMenu.activeSelf)
+        {
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
+        }
+        //reload the game, go to next level
+        GameStaticValue.currentScene = 0; //GameStaticValue saves all values that pass through different scenes
+        SceneManager.LoadScene(1); // Scene 1 is the loading screen
+    }
+
+    public void Restart()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+    }
+
+    public void Quit()
+    {
+        inGameMenu.SetActive(!inGameMenu.activeSelf);
+        //tutorial video
+        if (!inGameMenu.activeSelf)
+        {
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
+        }
+        //reload the game, go to next level
+        GameStaticValue.currentScene = 0; //GameStaticValue saves all values that pass through different scenes
+        SceneManager.LoadScene(1); // Scene 1 is the loading screen
+    }
+
 
 }

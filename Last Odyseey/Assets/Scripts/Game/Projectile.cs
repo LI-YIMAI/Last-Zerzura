@@ -52,7 +52,7 @@ public class Projectile : MonoBehaviour
             if(target.gameObject == other.gameObject)
             {
                 // parent has reference to tower 
-                target.TakeDamage(parent.Damage);
+                target.TakeDamage(parent.Damage,parent.Count);
                 myAnimator.SetTrigger("Impact");
                 
             }

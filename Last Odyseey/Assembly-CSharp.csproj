@@ -68,6 +68,7 @@
     <Compile Include="Assets\FogOfWar\Source files\Demo files\Script\Player.cs" />
     <Compile Include="Assets\FogOfWar\Source files\Scripts\Fow_Script.cs" />
     <Compile Include="Assets\FogOfWar\Source files\Scripts\FowUnit.cs" />
+    <Compile Include="Assets\GoToGitHub.cs" />
     <Compile Include="Assets\ImpactBehaviour.cs" />
     <Compile Include="Assets\Scripts\Game\Astar\AStar.cs" />
     <Compile Include="Assets\Scripts\Game\Astar\AstarDebugging.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Assets\Scripts\UI\GameStaticValue.cs" />
     <Compile Include="Assets\Scripts\UI\Menu_Play.cs" />
     <Compile Include="Assets\Scripts\UI\SceneLoader.cs" />
+    <Compile Include="Assets\Setting_changeGameValue.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -155,10 +157,8 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\Resources\map1.txt" />
     <None Include="Assets\Zone UI\Shaders\UI Blur.shader" />
     <None Include="Assets\Zone UI\Shaders\UI Particle Additive.shader" />
-    <None Include="Assets\Resources\map2.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -184,46 +184,46 @@
     <None Include="Assets\Fonts 1\Fonts\Lecompte\Lecompte.fnt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Triangle.Runtime">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Triangle.Runtime.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Users/lang/Documents/unity_editor/2018.4.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -424,13 +424,13 @@
       <HintPath>/Users/lang/Documents/unity_editor/2018.4.17f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/lang/Desktop/COMP3004/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/lang/Desktop/tmp/COMP3004/Last Odyseey/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Users/lang/Documents/unity_editor/2018.4.17f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
