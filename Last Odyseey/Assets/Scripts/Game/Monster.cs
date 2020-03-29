@@ -207,7 +207,21 @@ public class Monster : MonoBehaviour
             }
             if (inital_speed == 1)
             {
-
+                if (speed > 0.6)
+                {
+                    if (!debuff_status)
+                    {
+                        float temp = speed;
+                        Debug.Log(count);
+                        speed = speed - 0.2f * count;
+                        debuff_status = true;
+                        Debug.Log(speed);
+                        StartCoroutine(StartCountdown());
+                        //wait(temp);
+                        //speed = temp;
+                        //debuff_status = false;
+                    }
+                }
             }
             
             
@@ -230,13 +244,14 @@ public class Monster : MonoBehaviour
         while (currCountdownValue > 0)
         {
             Debug.Log("Countdown: " + currCountdownValue);
-            yield return new WaitForSeconds(1.0f);
+            
             currCountdownValue--;
             if (currCountdownValue == 0)
             {
                 debuff_status = false;
                 speed = inital_speed;
             }
+            yield return new WaitForSeconds(1.0f);
         }
     }
     //public void wait(float temp)
