@@ -6,9 +6,9 @@ public class Monster : MonoBehaviour
 {
     [SerializeField]
     private float speed;
-
+    private bool debuff_status = false;
     private Stack<Node> path;
-
+    private float inital_speed;
     public Point GridPosition { get; set; }
 
     private Vector3 destination;
@@ -30,6 +30,17 @@ public class Monster : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         health.Initialize();
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+    private void Start()
+    {
+        if (speed == 2)
+        {
+            inital_speed = 2;
+        }
+        if(speed == 1)
+        {
+            inital_speed = 1;
+        }
     }
     private void Update()
     {
@@ -171,12 +182,37 @@ public class Monster : MonoBehaviour
         GameManager.Instance.Removemonster(this);
     }
     //taking damage
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage,int count)
     {
         if (IsActive)
         {
             health.CurrentValue -= damage;
-            if(health.CurrentValue <= 0)
+            if (inital_speed == 2)
+            {
+                if (speed > 1.4)
+                {
+                    if (!debuff_status)
+                    {
+                        float temp = speed;
+                        Debug.Log(count);
+                        speed = speed - 0.3f * count;
+                        debuff_status = true;
+                        Debug.Log(speed);
+                        StartCoroutine(StartCountdown());
+                        //wait(temp);
+                        //speed = temp;
+                        //debuff_status = false;
+                    }
+                }
+            }
+            if (inital_speed == 1)
+            {
+
+            }
+            
+            
+
+            if (health.CurrentValue <= 0)
             {
                 GameManager.Instance.Gold += 2;
                 // go to death state
@@ -187,4 +223,32 @@ public class Monster : MonoBehaviour
         }
         
     }
+    float currCountdownValue;
+    public IEnumerator StartCountdown(float countdownValue = 3)
+    {
+        currCountdownValue = countdownValue;
+        while (currCountdownValue > 0)
+        {
+            Debug.Log("Countdown: " + currCountdownValue);
+            yield return new WaitForSeconds(1.0f);
+            currCountdownValue--;
+            if (currCountdownValue == 0)
+            {
+                debuff_status = false;
+                speed = inital_speed;
+            }
+        }
+    }
+    //public void wait(float temp)
+    //{
+    //    float timeLeft = 3.0f;
+    //    timeLeft -= Time.deltaTime;
+    //    if (timeLeft < 0)
+    //    {
+    //        speed = temp;
+    //        debuff_status = false;
+    //    }
+
+
+    //}
 }

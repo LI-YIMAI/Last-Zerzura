@@ -152,25 +152,25 @@ public class GameManager : Singleton<GameManager>
         //Else no
         TowerBtn Storm = GameObject.FindGameObjectWithTag("StormBtn").GetComponent<TowerBtn>();
         TowerBtn Frozen = GameObject.FindGameObjectWithTag("FrozBtn").GetComponent<TowerBtn>();
-        TowerBtn Poision = GameObject.FindGameObjectWithTag("PoisionBtn").GetComponent<TowerBtn>();
-        TowerBtn Fire = GameObject.FindGameObjectWithTag("FireBtn").GetComponent<TowerBtn>();
-        if (Gold < 5)
-        {
-            Poision.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
-        }
-        else
-        {
-            Poision.GetComponent<Image>().color = Color.white;
-        }
+//        TowerBtn Poision = GameObject.FindGameObjectWithTag("PoisionBtn").GetComponent<TowerBtn>();
+//        TowerBtn Fire = GameObject.FindGameObjectWithTag("FireBtn").GetComponent<TowerBtn>();
+        //if (Gold < 5)
+        //{
+        //    Poision.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
+        //}
+        //else
+        //{
+        //    Poision.GetComponent<Image>().color = Color.white;
+        //}
         if (Gold < 3)
         {
             Frozen.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
-            Fire.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
+          //  Fire.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
         }
         else
         {
             Frozen.GetComponent<Image>().color = Color.white;
-            Fire.GetComponent<Image>().color = Color.white;
+         //   Fire.GetComponent<Image>().color = Color.white;
         }
         if (Gold < 2)
         {
@@ -203,7 +203,7 @@ public class GameManager : Singleton<GameManager>
         {
             // random pick a index for MonsterPrefabs
             // need to finish all animation for other monster, so far, we just use index 3 monster 
-            int monsterIndex = Random.Range(1, 4);
+            int monsterIndex = 1;//Random.Range(1, 4);
             string type = string.Empty;
             // according to the index to save the type of monster 
             switch (monsterIndex)
@@ -300,6 +300,15 @@ public class GameManager : Singleton<GameManager>
             Gold -= (selectedTower.Price * num);
             Debug.Log(Gold);
             selectedTower.Damage = selectedTower.Damage * selectedTower.Count;
+            //set debuff value
+            //if (selectedTower.Count < 3)
+            //{
+            //    selectedTower.speed_debuff_value = selectedTower
+            //    Debug.Log(selectedTower.speed_debuff_value);
+            //}
+            
+            
+            
             selectedTower.Count++;
         }
     }
