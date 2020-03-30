@@ -30,9 +30,9 @@ FengTing Guo|
 ---
 
 ### Current Goal
-- [Y] Map
-- [ ] Turrent
-- [ ] Minions
+- [x] Map
+- [x] Towers
+- [x] Minions
 ---
 
 ### Requirements Of The Project
