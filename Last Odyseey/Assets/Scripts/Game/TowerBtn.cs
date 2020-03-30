@@ -52,15 +52,14 @@ public class TowerBtn : MonoBehaviour
         switch (type)
         {
             case "Brand":
-                tooltip = string.Format("<color=#ffa500ff><size=20><b>Fire</b></size></color>");
+                tooltip = string.Format("<color=#ffa500ff><size=20><b>Brand:FireTower</b></size></color>\nDamage: 7\nDebuff: slowing speed 3 sec\nAttack Speed: 5");
                 break;
             case "Ashe":
-                Tower
-                tooltip = string.Format("<color=#00ffffff><size=20><b>Frozen</b></size></color>\nDamage: {0} \nProc: {1}% \nDebuff duration: {2}sec \nSlowing factor: {3}% \n Has a chance to slow down the targets",);
+                tooltip = string.Format("<color=#00ffffff><size=20><b>Ashe:IceTower</b></size></color>\nDamage: 7\nDebuff: slowing speed 3 sec\nAttack Speed: 5");
                 break;
 
         }
-        GameManager.Instance.setToolText(type);
+        GameManager.Instance.setToolText(tooltip);
         GameManager.Instance.showStats();
     }
 }

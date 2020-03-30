@@ -51,8 +51,8 @@ public class GameManager : Singleton<GameManager>
     private Text sellText;
     [SerializeField]
     private Text upgradeText;
-    [SerializeField]
-    private Text sizeText;
+    //[SerializeField]
+    //private Text sizeText;
     [SerializeField]
     private Text statsText;
     private int health = 15;
@@ -438,7 +438,7 @@ public class GameManager : Singleton<GameManager>
     public void setToolText(string txt)
     { 
         statsText.text = txt;
-        sizeText.text = txt;
+        //sizeText.text = txt;
     }
 
 
