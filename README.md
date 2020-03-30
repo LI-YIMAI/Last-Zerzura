@@ -30,7 +30,7 @@ FengTing Guo|
 ---
 
 ### Current Goal
-- [ ] Map
+- [Y] Map
 - [ ] Turrent
 - [ ] Minions
 ---
