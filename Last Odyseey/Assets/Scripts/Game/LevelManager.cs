@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -161,6 +161,8 @@ public class LevelManager : Singleton<LevelManager>
 
 
         redSpawn = new Point(11, 6);
+        //redSpawn = new Point(1, 1);
+
         Instantiate(redPortalPrefab, Tiles[redSpawn].GetComponent<TileScript>().WorldPosition_center, Quaternion.identity);
         
 

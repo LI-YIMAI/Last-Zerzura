@@ -44,5 +44,23 @@ public class TowerBtn : MonoBehaviour
     {
         pricetext.text = price + "$";
     }
+
+    public void ShowInfo(string type)
+    {
+        string tooltip = string.Empty;
+
+        switch (type)
+        {
+            case "Brand":
+                tooltip = string.Format("<color=#ffa500ff><size=20><b>Brand:FireTower</b></size></color>\nDamage: 7\nDebuff: slowing speed 3 sec\nAttack Speed: 5");
+                break;
+            case "Ashe":
+                tooltip = string.Format("<color=#00ffffff><size=20><b>Ashe:IceTower</b></size></color>\nDamage: 7\nDebuff: slowing speed 3 sec\nAttack Speed: 5");
+                break;
+
+        }
+        GameManager.Instance.setToolText(tooltip);
+        GameManager.Instance.showStats();
+    }
 }
 

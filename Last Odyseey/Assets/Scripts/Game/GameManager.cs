@@ -33,6 +33,14 @@ public class GameManager : Singleton<GameManager>
 
     private int gold;
     private int wave = 0;
+    private int lives;
+    private bool gameOver = false;
+    [SerializeField]
+    private GameObject gameOverMenu;
+    [SerializeField]
+    private Text livesText;
+    [SerializeField]
+    private GameObject statsPanel;
     [SerializeField]
     private Text WaveTxt; // this will have a referece for the actual waveTxt
     [SerializeField]
@@ -43,6 +51,10 @@ public class GameManager : Singleton<GameManager>
     private Text sellText;
     [SerializeField]
     private Text upgradeText;
+    //[SerializeField]
+    //private Text sizeText;
+    [SerializeField]
+    private Text statsText;
     private int health = 15;
     private List<Monster> Activemonster = new List<Monster>();
     [SerializeField]
@@ -61,6 +73,25 @@ public class GameManager : Singleton<GameManager>
     [SerializeField]
     private AudioSource backgroundMusic;
 
+    public int Lives
+    {
+        get
+        {
+            return lives;
+
+        }
+        set {
+            this.lives = value;
+            if (lives <= 0)
+            {
+                this.lives = 0;
+                GameOver();
+            }
+            livesText.text = value.ToString();
+
+        }
+    }
+
     private void Awake()
     {
         Pool = GetComponent<ObjectPool>();
@@ -68,11 +99,14 @@ public class GameManager : Singleton<GameManager>
     // Start is called before the first frame update
     void Start()
     {
-        // set the Gold to 5 and assign it to Goldtext 
+        // set the Gold to 5 and assign it to Goldtext
+        Lives = 10;
         Gold = 20;
         backgroundMusic.volume = GameStaticValue.currentMusicVol;
 
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -193,6 +227,8 @@ public class GameManager : Singleton<GameManager>
         wavebtn.SetActive(false);
     }
 
+
+
     private IEnumerator SpawnWave()
     {
 
@@ -243,7 +279,7 @@ public class GameManager : Singleton<GameManager>
     {
         Activemonster.Remove(monster);
         // when there is no active monster, we need show the wave button 
-        if (!WaveActive)
+        if (!WaveActive && !gameOver)
         {
             wavebtn.SetActive(true);
         }
@@ -313,6 +349,15 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    public void GameOver()
+    {
+        if (!gameOver)
+        {
+            gameOver = true;
+            gameOverMenu.SetActive(true);
+        }
+    }
+
     public void ShowInGameMenu()
     {
         inGameMenu.SetActive(!inGameMenu.activeSelf);
@@ -360,4 +405,41 @@ public class GameManager : Singleton<GameManager>
         GameStaticValue.currentScene = 0; //GameStaticValue saves all values that pass through different scenes
         SceneManager.LoadScene(1); // Scene 1 is the loading screen
     }
+
+    public void Restart()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+    }
+
+    public void Quit()
+    {
+        inGameMenu.SetActive(!inGameMenu.activeSelf);
+        //tutorial video
+        if (!inGameMenu.activeSelf)
+        {
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
+        }
+        //reload the game, go to next level
+        GameStaticValue.currentScene = 0; //GameStaticValue saves all values that pass through different scenes
+        SceneManager.LoadScene(1); // Scene 1 is the loading screen
+    }
+
+    public void showStats()
+    {
+        statsPanel.SetActive(!statsPanel.activeSelf);
+    }
+
+    public void setToolText(string txt)
+    { 
+        statsText.text = txt;
+        //sizeText.text = txt;
+    }
+
+
 }

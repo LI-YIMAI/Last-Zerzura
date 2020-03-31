@@ -98,7 +98,7 @@ public class Tower : MonoBehaviour
                 attackTimer = 0;
             }
         }
-        if (target == null && monsters.Count > 0)
+        if (target == null && monsters.Count > 0 && monsters.Peek().IsActive)
         {
             target = monsters.Dequeue();
             

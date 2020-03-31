@@ -163,6 +163,7 @@ public class Monster : MonoBehaviour
         {
             // pass true and release the monster 
             StartCoroutine(Scale(new Vector3(1, 1), new Vector3(0.1f, 0.1f),true));
+            GameManager.Instance.Lives--;
         }
         if (other.tag == "Tile")
         {
