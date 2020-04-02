@@ -47,22 +47,13 @@ public class Monster : MonoBehaviour
         // been called per frame
         Move();
     }
-    public void spawn(int health,string type)
+    public void spawn(int health)
     {
         // set the start spqwn position
         transform.position = LevelManager.Instance.BluePortal.transform.position;
         this.health.Bar.Reset();
         this.health.MaxVal = health;
         this.health.CurrentValue = this.health.MaxVal;
-        if(type== "PurpleMonster")
-        {
-            this.speed = 1;
-        }
-        if(type== "GreenMonster")
-        {
-            this.speed = 2;
-        }
-        
         // get the animator component
         //myAnimator = GetComponent<Animator>();
         // starts to scale the monster 

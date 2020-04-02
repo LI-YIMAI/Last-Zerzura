@@ -186,8 +186,8 @@ public class GameManager : Singleton<GameManager>
         //Else no
         TowerBtn Storm = GameObject.FindGameObjectWithTag("StormBtn").GetComponent<TowerBtn>();
         TowerBtn Frozen = GameObject.FindGameObjectWithTag("FrozBtn").GetComponent<TowerBtn>();
-//      TowerBtn Poision = GameObject.FindGameObjectWithTag("PoisionBtn").GetComponent<TowerBtn>();
-//      TowerBtn Fire = GameObject.FindGameObjectWithTag("FireBtn").GetComponent<TowerBtn>();
+//        TowerBtn Poision = GameObject.FindGameObjectWithTag("PoisionBtn").GetComponent<TowerBtn>();
+//        TowerBtn Fire = GameObject.FindGameObjectWithTag("FireBtn").GetComponent<TowerBtn>();
         //if (Gold < 5)
         //{
         //    Poision.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
@@ -262,7 +262,7 @@ public class GameManager : Singleton<GameManager>
             // use the ObjectPool object to find the required type object and get its component Monster
             Monster monster = Pool.GetObject(type).GetComponent<Monster>();
             // call the spawn function in Monster script and set the Monster transform postion
-            monster.spawn(health,type);
+            monster.spawn(health);
             // difficulty 
             if (wave % 3 == 0)
             {
