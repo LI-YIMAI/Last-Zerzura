@@ -262,7 +262,7 @@ public class GameManager : Singleton<GameManager>
             // use the ObjectPool object to find the required type object and get its component Monster
             Monster monster = Pool.GetObject(type).GetComponent<Monster>();
             // call the spawn function in Monster script and set the Monster transform postion
-            monster.spawn(health);
+            monster.spawn(health,type);
             // difficulty 
             if (wave % 3 == 0)
             {
