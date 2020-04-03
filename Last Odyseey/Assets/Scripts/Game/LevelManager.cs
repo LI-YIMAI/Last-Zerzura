@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : Singleton<LevelManager>
 {
@@ -18,7 +19,7 @@ public class LevelManager : Singleton<LevelManager>
     private GameObject redPortalPrefab;
 
     public Portal BluePortal { get; set; }
-
+    string sceneName;
     [SerializeField]
     private Transform map;
 
@@ -60,6 +61,12 @@ public class LevelManager : Singleton<LevelManager>
 
     void Start()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Retrieve the name of this scene.
+        sceneName = currentScene.name;
+
+        
         CreateLevel();
         
     }
@@ -142,8 +149,27 @@ public class LevelManager : Singleton<LevelManager>
     }
     private string[] ReadLevelText()
     {
-        TextAsset bindData = Resources.Load("Level") as TextAsset;
-
+        TextAsset bindData;
+        //scene: Game1-map1
+        if (sceneName == "Game1")
+        {
+            bindData = Resources.Load("map1") as TextAsset;
+        }
+        //scene: Game2-map2
+        else if (sceneName == "Game2")
+        {
+            bindData = Resources.Load("map2") as TextAsset;
+        }
+        //scene: Game3-map3
+        else if (sceneName == "Game3")
+        {
+            bindData = Resources.Load("map3") as TextAsset;
+        }
+        //scene: Game-Default_map
+        else
+        {
+            bindData = Resources.Load("Level") as TextAsset;
+        }
         string data = bindData.text.Replace(Environment.NewLine, string.Empty);
 
         return data.Split('-');
