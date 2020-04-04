@@ -13,6 +13,7 @@ TagManager:
   - Tile
   - UpgradeBtn
   - moutain
+  - bone
   layers:
   - Default
   - TransparentFX

@@ -44,13 +44,13 @@ namespace Michsky.UI.Zone
 
         void Start()
         {
-            currentButton = buttons[currentPanelIndex];
-            currentButtonAnimator = currentButton.GetComponent<Animator>();
-            currentButtonAnimator.Play(buttonFadeIn);
+            //currentButton = buttons[currentPanelIndex];
+            //currentButtonAnimator = currentButton.GetComponent<Animator>();
+            //currentButtonAnimator.Play(buttonFadeIn);
 
-            currentPanel = panels[currentPanelIndex];
-            currentPanelAnimator = currentPanel.GetComponent<Animator>();
-            currentPanelAnimator.Play(panelFadeIn);
+            //currentPanel = panels[currentPanelIndex];
+            //currentPanelAnimator = currentPanel.GetComponent<Animator>();
+            //currentPanelAnimator.Play(panelFadeIn);
 
             if(enableTitleAnim == true)
             {

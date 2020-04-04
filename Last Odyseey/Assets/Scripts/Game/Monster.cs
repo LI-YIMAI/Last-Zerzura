@@ -24,6 +24,8 @@ public class Monster : MonoBehaviour
     private Animator myAnimator;
     [SerializeField]
     private Stat health;
+    [SerializeField]
+    private GameObject bone;
     private void Awake()
     {
         //sets up references to the components
@@ -54,19 +56,27 @@ public class Monster : MonoBehaviour
         this.health.Bar.Reset();
         this.health.MaxVal = health;
         this.health.CurrentValue = this.health.MaxVal;
-        if(type== "PurpleMonster")
+        
+        if (type== "PurpleMonster")
         {
             this.speed = 1;
+            this.debuff_status = false;
+            //GameObject bonee = this.transform.GetChild(1).gameObject;
+            this.bone = this.transform.GetChild(1).gameObject;
+            //this.bone = GameObject.FindGameObjectWithTag("bone");
         }
         if(type== "GreenMonster")
         {
             this.speed = 2;
+            this.debuff_status = false;
+            this.bone = this.transform.GetChild(1).gameObject;
+            //this.bone = GameObject.FindGameObjectWithTag("bone");
         }
         
         // get the animator component
         //myAnimator = GetComponent<Animator>();
         // starts to scale the monster 
-        StartCoroutine(Scale(new Vector3(0.1f, 0.1f), new Vector3(1, 1), false));
+        StartCoroutine(Scale(new Vector3(0.1f, 0.1f), new Vector3(1, 1),false));
         // once finished scaling the monster, we set the monster path which will be passed from LevelManager
         SetPath(LevelManager.Instance.Path);
     }
@@ -78,14 +88,21 @@ public class Monster : MonoBehaviour
 
         while (progress<=1)
         {
-            //lerp is chaging the size over timel
+            //lerp is chaging the size over time
             transform.localScale = Vector3.Lerp(from, to, progress);
-
+            // if have bone
+            if (bone != null)
+            {
+                bone.transform.localScale = Vector3.Lerp(from, to, progress);
+            }
+            
+            //Debug.Log(progress);
             progress += Time.deltaTime;
 
             yield return null;
         }
         transform.localScale = to;
+        Debug.Log(transform.localScale);
         IsActive = true;
         if (remove)
         {
@@ -138,13 +155,13 @@ public class Monster : MonoBehaviour
     {
         if (currentPos.Y > newPos.Y)
         {
-            // moving down
+            // moving up
             myAnimator.SetInteger("Horizontal", 0);
             myAnimator.SetInteger("Vertical", 1);
         }
         else if (currentPos.Y < newPos.Y)
         {
-            //moving up
+            //moving down
             myAnimator.SetInteger("Horizontal", 0);
             myAnimator.SetInteger("Vertical", -1);
         }
@@ -197,21 +214,22 @@ public class Monster : MonoBehaviour
         if (IsActive)
         {
             health.CurrentValue -= damage;
+            //taking debuff - speed
             if (inital_speed == 2)
             {
-                if (speed > 1.4)
+                if (speed > 0.6)
                 {
+                    //debuff in active
                     if (!debuff_status)
                     {
-                        float temp = speed;
-                        Debug.Log(count);
-                        speed = speed - 0.3f * count;
+                        
+                        //Debug.Log(count);
+                        speed = speed - 0.7f * count;
                         debuff_status = true;
-                        Debug.Log(speed);
+                        //Debug.Log(speed);
+                        //debuff time start count down
                         StartCoroutine(StartCountdown());
-                        //wait(temp);
-                        //speed = temp;
-                        //debuff_status = false;
+                       
                     }
                 }
             }
@@ -221,15 +239,13 @@ public class Monster : MonoBehaviour
                 {
                     if (!debuff_status)
                     {
-                        float temp = speed;
-                        Debug.Log(count);
+                       
+                        //Debug.Log(count);
                         speed = speed - 0.2f * count;
                         debuff_status = true;
-                        Debug.Log(speed);
+                        //Debug.Log(speed);
                         StartCoroutine(StartCountdown());
-                        //wait(temp);
-                        //speed = temp;
-                        //debuff_status = false;
+                        
                     }
                 }
             }
@@ -248,6 +264,7 @@ public class Monster : MonoBehaviour
         
     }
     float currCountdownValue;
+    //count down 3s for debuff time
     public IEnumerator StartCountdown(float countdownValue = 3)
     {
         currCountdownValue = countdownValue;
@@ -264,16 +281,4 @@ public class Monster : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
         }
     }
-    //public void wait(float temp)
-    //{
-    //    float timeLeft = 3.0f;
-    //    timeLeft -= Time.deltaTime;
-    //    if (timeLeft < 0)
-    //    {
-    //        speed = temp;
-    //        debuff_status = false;
-    //    }
-
-
-    //}
 }

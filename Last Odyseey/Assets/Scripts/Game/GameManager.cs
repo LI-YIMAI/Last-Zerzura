@@ -253,16 +253,16 @@ public class GameManager : Singleton<GameManager>
                     break;
                 case 2:
                     type = "PurpleMonster";
-                    //type = "aba";
                     break;
                 case 3:
                     type = "RedMonster";
-                    //type = "aba";
                     break;
             }
             // use the ObjectPool object to find the required type object and get its component Monster
             Monster monster = Pool.GetObject(type).GetComponent<Monster>();
             // call the spawn function in Monster script and set the Monster transform postion
+            //GameObject bone = GameObject.FindGameObjectWithTag("bone");
+       
             monster.spawn(health, type);
             // difficulty 
             if (wave % 3 == 0)
@@ -295,11 +295,6 @@ public class GameManager : Singleton<GameManager>
         }
         selectedTower = tower;
         selectedTower.Select();
-        //if selected, show up
-        //check if the tower has upgraded and calculate the sell price with upgrade
-        // int extra_price = selectedTower.Count - 1;
-        //sellText.text = "+ " + ((selectedTower.Price / 2)+extra_price).ToString();
-        //upgradeText.text = "- " + (selectedTower.Price * selectedTower.Count).ToString();
         upgradePanel.SetActive(true);
     }
 
@@ -337,15 +332,6 @@ public class GameManager : Singleton<GameManager>
             Gold -= (selectedTower.Price * num);
             Debug.Log(Gold);
             selectedTower.Damage = selectedTower.Damage * selectedTower.Count;
-            //set debuff value
-            //if (selectedTower.Count < 3)
-            //{
-            //    selectedTower.speed_debuff_value = selectedTower
-            //    Debug.Log(selectedTower.speed_debuff_value);
-            //}
-
-
-
             selectedTower.Count++;
         }
     }

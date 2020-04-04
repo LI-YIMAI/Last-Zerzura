@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 8834626147726315042}
   m_Layer: 0
   m_Name: bone_1
-  m_TagString: Untagged
+  m_TagString: bone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -530,7 +530,7 @@ Transform:
   m_GameObject: {fileID: 6585003787279142800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3573974407604098701}
   - {fileID: 8834626147726315042}
@@ -580,7 +580,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.4133333, y: 1.4833333}
+  m_Size: {x: 5.56, y: 4.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -598,11 +598,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd760728260f4f229b7fdc825ca2a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   health:
     bar: {fileID: 3573974406819577060}
     maxVal: 0
     currentVal: 0
+  bone: {fileID: 0}
 --- !u!61 &61053826725466962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -621,7 +622,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5.56, y: 4.17}
-    newSize: {x: 1.4133333, y: 1.4833333}
+    newSize: {x: 5.56, y: 4.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

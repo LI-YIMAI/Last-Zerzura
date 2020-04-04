@@ -78,7 +78,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.2066667, y: 1.2}
+  m_Size: {x: 7.413333, y: 5.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -101,6 +101,7 @@ MonoBehaviour:
     bar: {fileID: 2113692732}
     maxVal: 0
     currentVal: 0
+  bone: {fileID: 0}
 --- !u!95 &95360923522922572
 Animator:
   serializedVersion: 3
@@ -138,7 +139,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 7.413333, y: 5.56}
-    newSize: {x: 1.2066667, y: 1.2}
+    newSize: {x: 7.413333, y: 5.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
