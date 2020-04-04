@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/onlylovefox/Documents/Unity/TestAPK/3004.apk
+C:/Users/Xiaowang/Desktop/Last.apk
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/LoadingScene.unity
@@ -96,7 +96,7 @@ aa165095bcf0f4d99594ea33df01c81b UnityEngine.UI.dll:UnityEngine.UI.Slider
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-c7ae5e6ca13a824ea17629f8f2fdfa92 Assembly-CSharp.dll:.Monster
+e394f7ad5d59cfa1ee79bfd7d0fd793c Assembly-CSharp.dll:.Monster
 a108f0baae1812dba98b26cdb1f46e80 Assembly-CSharp.dll:Michsky.UI.Zone.PointerEnterEvents
 0fb1f4030918b1c426475d85b036f2ce Assembly-CSharp.dll:.BarScript
 2d9ed2b8a19eeb779118f46c09e0f19f Assembly-CSharp.dll:Michsky.UI.Zone.MainPanelManager

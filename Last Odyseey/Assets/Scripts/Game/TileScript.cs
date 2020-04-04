@@ -118,7 +118,7 @@ public class TileScript : MonoBehaviour
         myTower.Count = 1;
         //Call Buytower and Reset the ClickedBtn as null
         GameManager.Instance.Buytower();
-
+        GameManager.Instance.hideStats();
     }
 
     private void ColorTile(Color newColor)

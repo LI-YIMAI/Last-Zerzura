@@ -53,14 +53,22 @@ public class TowerBtn : MonoBehaviour
         {
             case "Brand":
                 tooltip = string.Format("<color=#ffa500ff><size=20><b>Brand:FireTower</b></size></color>\nDamage: 7\nDebuff: slowing speed 3 sec\nAttack Speed: 5");
+                if (GameManager.Instance.getGold() >= 2)
+                {
+                    GameManager.Instance.setToolText(tooltip);
+                    GameManager.Instance.showStats();
+                }
                 break;
             case "Ashe":
                 tooltip = string.Format("<color=#00ffffff><size=20><b>Ashe:IceTower</b></size></color>\nDamage: 7\nDebuff: slowing speed 3 sec\nAttack Speed: 5");
+                if (GameManager.Instance.getGold() >= 3)
+                {
+                    GameManager.Instance.setToolText(tooltip);
+                    GameManager.Instance.showStats();
+                }
                 break;
-
         }
-        GameManager.Instance.setToolText(tooltip);
-        GameManager.Instance.showStats();
+        
     }
 }
 

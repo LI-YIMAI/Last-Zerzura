@@ -30,7 +30,6 @@ public class GameManager : Singleton<GameManager>
         get { return Activemonster.Count > 0; }
 
     }
-
     private int gold;
     private int wave = 0;
     private int lives;
@@ -200,16 +199,19 @@ public class GameManager : Singleton<GameManager>
         if (Gold < 3)
         {
             Frozen.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
+            hideStats();
             //  Fire.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
         }
         else
         {
             Frozen.GetComponent<Image>().color = Color.white;
+
             //   Fire.GetComponent<Image>().color = Color.white;
         }
         if (Gold < 2)
         {
             Storm.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
+            hideStats();
         }
         else
         {
@@ -408,15 +410,22 @@ public class GameManager : Singleton<GameManager>
         SceneManager.LoadScene(1); // Scene 1 is the loading screen
     }
 
+    public void hideStats()
+    {
+        statsPanel.SetActive(false);
+    }
     public void showStats()
     {
-        statsPanel.SetActive(!statsPanel.activeSelf);
+        statsPanel.SetActive(true);
     }
 
     public void setToolText(string txt)
     {
         statsText.text = txt;
         //sizeText.text = txt;
+    }
+    public int getGold() {
+        return gold;
     }
 
 
