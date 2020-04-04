@@ -5,6 +5,9 @@ SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/LoadingScene.unity
 Assets/Scenes/Game.unity
+Assets/Scenes/Game1.unity
+Assets/Scenes/Game2.unity
+Assets/Scenes/Game3.unity
 SceneListEnd?
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 77c21079ace8d76ce6e941d3dabbfe6e Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -161,7 +164,7 @@ e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexJitter
 c15f96540742a3c4661c102493585e1d Assembly-CSharp.dll:Michsky.UI.Zone.HorizontalSelector
 e244702e0dc05782229aa524e4d757f5 Assembly-CSharp.dll:TMPro.Examples.TMP_ExampleScript_01
 6f98b8950808beacdfabd2056ae8322c Assembly-CSharp.dll:Michsky.UI.Zone.SliderManager
-9cf9b43d03c2fc1872b16a445e759247 Assembly-CSharp.dll:.GameManager
+4c6020d2c948f4a3f64f0f00ecdcf522 Assembly-CSharp.dll:.GameManager
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -247,5 +250,5 @@ eda13e77baf8ccbea6220d180a87a9d9 Assembly-CSharp.dll:Michsky.UI.Zone.ScrollForMo
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 0e1d02c74d354ffc8b804011a794739b Unity.2D.IK.Runtime.dll:UnityEngine.Experimental.U2D.IK.IKManager2D
 59ce5902048c1041729c804e2772b2ce Unity.2D.IK.Runtime.dll:UnityEngine.Experimental.U2D.IK.CCDSolver2D
-df1ee3ee89db6f09ce7be9147036d942 Assembly-CSharp.dll:.Tower
+89c02cf398b3ca823ac3262f06b52c4c Assembly-CSharp.dll:.Tower
 f0405106ea41b4667d3e6be185ebfebe Assembly-CSharp.dll:Michsky.UI.Zone.ScrollGamepadManager

@@ -15,17 +15,17 @@ public class Menu_Play : MonoBehaviour
     }
     public void goToGame1Scene()
     {
-        GameStaticValue.currentScene = 2;
-        SceneManager.LoadScene("Game1");
+        GameStaticValue.currentScene = 3;
+        SceneManager.LoadScene(1);
     }
     public void goToGame2Scene()
     {
-        GameStaticValue.currentScene = 2;
-        SceneManager.LoadScene("Game2");
+        GameStaticValue.currentScene = 4;
+       SceneManager.LoadScene(1);
     }
     public void goToGame3Scene()
     {
-        GameStaticValue.currentScene = 2;
-        SceneManager.LoadScene("Game3");
+        GameStaticValue.currentScene = 5;
+       SceneManager.LoadScene(1);
     }
 }

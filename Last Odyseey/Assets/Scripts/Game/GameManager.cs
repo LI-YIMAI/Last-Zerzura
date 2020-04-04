@@ -80,7 +80,8 @@ public class GameManager : Singleton<GameManager>
             return lives;
 
         }
-        set {
+        set
+        {
             this.lives = value;
             if (lives <= 0)
             {
@@ -101,7 +102,7 @@ public class GameManager : Singleton<GameManager>
     {
         // set the Gold to 5 and assign it to Goldtext
         Lives = 10;
-        Gold = 20;
+        Gold = 5;
         backgroundMusic.volume = GameStaticValue.currentMusicVol;
 
     }
@@ -186,8 +187,8 @@ public class GameManager : Singleton<GameManager>
         //Else no
         TowerBtn Storm = GameObject.FindGameObjectWithTag("StormBtn").GetComponent<TowerBtn>();
         TowerBtn Frozen = GameObject.FindGameObjectWithTag("FrozBtn").GetComponent<TowerBtn>();
-//      TowerBtn Poision = GameObject.FindGameObjectWithTag("PoisionBtn").GetComponent<TowerBtn>();
-//      TowerBtn Fire = GameObject.FindGameObjectWithTag("FireBtn").GetComponent<TowerBtn>();
+        //      TowerBtn Poision = GameObject.FindGameObjectWithTag("PoisionBtn").GetComponent<TowerBtn>();
+        //      TowerBtn Fire = GameObject.FindGameObjectWithTag("FireBtn").GetComponent<TowerBtn>();
         //if (Gold < 5)
         //{
         //    Poision.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
@@ -199,12 +200,12 @@ public class GameManager : Singleton<GameManager>
         if (Gold < 3)
         {
             Frozen.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
-          //  Fire.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
+            //  Fire.GetComponent<Image>().color = new Color32(185, 155, 155, 255);
         }
         else
         {
             Frozen.GetComponent<Image>().color = Color.white;
-         //   Fire.GetComponent<Image>().color = Color.white;
+            //   Fire.GetComponent<Image>().color = Color.white;
         }
         if (Gold < 2)
         {
@@ -239,7 +240,7 @@ public class GameManager : Singleton<GameManager>
         {
             // random pick a index for MonsterPrefabs
             // need to finish all animation for other monster, so far, we just use index 3 monster 
-            int monsterIndex = 1;//Random.Range(1, 4);
+            int monsterIndex = Random.Range(1, 4);
             string type = string.Empty;
             // according to the index to save the type of monster 
             switch (monsterIndex)
@@ -262,7 +263,7 @@ public class GameManager : Singleton<GameManager>
             // use the ObjectPool object to find the required type object and get its component Monster
             Monster monster = Pool.GetObject(type).GetComponent<Monster>();
             // call the spawn function in Monster script and set the Monster transform postion
-            monster.spawn(health,type);
+            monster.spawn(health, type);
             // difficulty 
             if (wave % 3 == 0)
             {
@@ -342,9 +343,9 @@ public class GameManager : Singleton<GameManager>
             //    selectedTower.speed_debuff_value = selectedTower
             //    Debug.Log(selectedTower.speed_debuff_value);
             //}
-            
-            
-            
+
+
+
             selectedTower.Count++;
         }
     }
@@ -415,16 +416,7 @@ public class GameManager : Singleton<GameManager>
 
     public void Quit()
     {
-        inGameMenu.SetActive(!inGameMenu.activeSelf);
-        //tutorial video
-        if (!inGameMenu.activeSelf)
-        {
-            Time.timeScale = 1;
-        }
-        else
-        {
-            Time.timeScale = 0;
-        }
+
         //reload the game, go to next level
         GameStaticValue.currentScene = 0; //GameStaticValue saves all values that pass through different scenes
         SceneManager.LoadScene(1); // Scene 1 is the loading screen
@@ -436,7 +428,7 @@ public class GameManager : Singleton<GameManager>
     }
 
     public void setToolText(string txt)
-    { 
+    {
         statsText.text = txt;
         //sizeText.text = txt;
     }
