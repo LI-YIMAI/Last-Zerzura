@@ -9,7 +9,7 @@ public class GameManager : Singleton<GameManager>
 
 
     public TowerBtn ClickedBtn { get; set; }
-
+    public bool upgrade_panel_clicked = false;
     // property
     public int Gold
     {
@@ -290,7 +290,7 @@ public class GameManager : Singleton<GameManager>
 
     public void SelectTower(Tower tower)
     {
-
+        
         if (selectedTower != null)
         {
             selectedTower.Select();
@@ -298,6 +298,7 @@ public class GameManager : Singleton<GameManager>
         selectedTower = tower;
         selectedTower.Select();
         upgradePanel.SetActive(true);
+        upgrade_panel_clicked = false;
     }
 
     public void DeselectTower()
@@ -310,9 +311,13 @@ public class GameManager : Singleton<GameManager>
         //if unselect, dispear 
         upgradePanel.SetActive(false);
         selectedTower = null;
+        upgrade_panel_clicked = false;
+        Debug.Log(upgrade_panel_clicked);
     }
     public void SellTower()
     {
+        upgrade_panel_clicked = true;
+        Debug.Log(upgrade_panel_clicked);
         if (selectedTower != null)
         {
             int extra_price = selectedTower.Count - 1;
@@ -325,9 +330,11 @@ public class GameManager : Singleton<GameManager>
     }
     public void upgradeTower()
     {
-
+        upgrade_panel_clicked = true;
+        Debug.Log(upgrade_panel_clicked);
         if (selectedTower != null)
         {
+            
             Debug.Log(Gold);
             int num = selectedTower.Count;
             Debug.Log(num);
@@ -335,6 +342,12 @@ public class GameManager : Singleton<GameManager>
             Debug.Log(Gold);
             selectedTower.Damage = selectedTower.Damage * selectedTower.Count;
             selectedTower.Count++;
+            Debug.Log("1");
+            if (selectedTower.Count > num)
+            {
+                upgrade_panel_clicked = false;
+            }
+            
         }
     }
 

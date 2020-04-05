@@ -82,14 +82,14 @@ public class TileScript : MonoBehaviour
             {
                 GameManager.Instance.SelectTower(myTower);
             }
-            else {
-
+            else if(!GameManager.Instance.upgrade_panel_clicked){
                 GameManager.Instance.DeselectTower();
-            }
-
                 
+                Debug.Log(GameManager.Instance.upgrade_panel_clicked);
+                Debug.Log("2");
+            }
+               
         }
-
     }
     public void OnMouseExit()
     {

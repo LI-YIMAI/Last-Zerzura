@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{74EB7025-5A08-3DF8-80E0-8313DEFBBE2B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Zone UI/Scripts/MainPanelManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/TileScript.cs">
     <Files>
       <File FileName="Assets/Scripts/Game/LevelManager.cs" Line="164" Column="10" />
-      <File FileName="Assets/Scripts/Game/GameManager.cs" Line="294" Column="33" />
-      <File FileName="Assets/Scripts/Game/Monster.cs" Line="89" Column="27" />
+      <File FileName="Assets/Scripts/Game/GameManager.cs" Line="303" Column="32" />
+      <File FileName="Assets/Scripts/Game/Monster.cs" />
       <File FileName="Assets/Scripts/Game/TowerBtn.cs" Line="59" Column="23" />
-      <File FileName="Assets/Scripts/Game/Tower.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Game/ObjectPool.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Game/Tower.cs" Line="148" Column="33" />
+      <File FileName="Assets/Scripts/Game/ObjectPool.cs" />
       <File FileName="Assets/Scripts/Game/Singleton.cs" />
-      <File FileName="Assets/Scripts/UI/Menu_Play.cs" Line="15" Column="6" />
+      <File FileName="Assets/Scripts/UI/Menu_Play.cs" />
       <File FileName="Assets/Scripts/UI/SceneLoader.cs" />
       <File FileName="Assets/Zone UI/Scripts/MainPanelManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Game/TileScript.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +19,9 @@
           <Node name="Last Odyseey" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Game" expanded="True" />
+                <Node name="Game" expanded="True">
+                  <Node name="TileScript.cs" selected="True" />
+                </Node>
                 <Node name="UI" expanded="True" />
               </Node>
               <Node name="Sprites" expanded="True" />
@@ -26,9 +29,7 @@
                 <Node name="Resources" expanded="True" />
               </Node>
               <Node name="Zone UI" expanded="True">
-                <Node name="Scripts" expanded="True">
-                  <Node name="MainPanelManager.cs" selected="True" />
-                </Node>
+                <Node name="Scripts" expanded="True" />
               </Node>
             </Node>
           </Node>

@@ -1714,6 +1714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3012908937a944c48a9b60379a04488c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgrade_panel_clicked: 0
   gameOverMenu: {fileID: 2070379385}
   livesText: {fileID: 762826369}
   statsPanel: {fileID: 713517485}
