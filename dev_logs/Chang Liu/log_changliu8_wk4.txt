@@ -1,0 +1,7 @@
+Devlog-week4: TileScript class and point class  
+
+1. Initialize the properties of each tile such as isEmpty, is Walkable. These properties are the based information for maps.  
+
+2. Create point class and add the property for X and Y which represent the location of the map. 
+
+3. Implement assignment operator for ¡°==¡±, ¡°!=¡±, and ¡°-¡± in point object.    

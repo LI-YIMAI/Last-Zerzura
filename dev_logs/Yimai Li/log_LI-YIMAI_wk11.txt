@@ -1,0 +1,5 @@
+Devlog-week11: Stat class for Monster 
+
+1. Create Stat class which has the reference of BarScript. The stat class include the property about current health, max health, and the reference for BarScript. The Monster class has reference for Stat class.  
+
+2. Implement initialize () function in Stat class and it will be called in Monster class. When the monster game object is created, the monster object will call the initialize function to set its Max health and Current health. 

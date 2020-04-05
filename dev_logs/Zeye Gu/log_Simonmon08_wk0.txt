@@ -1,0 +1,3 @@
+Devlog-week0:  
+
+1.Set up Github Repository with group, and research the knowledge required for the project. 

@@ -1,0 +1,10 @@
+Devlog-week6: Coded tower button functionality this week. 
+
+
+1.Update config info for buttons and place all tower button on the right side of the game map. 
+
+2.Edited PlaceTower() so that when each tower is created, they will not be overlapping to each other. 
+
+3.Create BuyTower(), it only do basic functionality for now, since gold system has not created yet. 
+
+4.User find find corresponding tower buy click a tower icon. 

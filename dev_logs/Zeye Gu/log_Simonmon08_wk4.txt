@@ -1,0 +1,8 @@
+
+Devlog-week4: Setup tower prefab config this week.
+
+1.Setup tower prefabs and their config info (such as their pixel per Unit). Edited Setup function in TileScript.cs 
+
+2.Added Animation for towers. 
+
+3.Fixed the position of tower on each grid. Make sure they are in the middle of any girds. 

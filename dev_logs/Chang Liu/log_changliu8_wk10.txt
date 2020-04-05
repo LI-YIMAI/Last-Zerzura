@@ -1,0 +1,5 @@
+Devlog-week10:  
+
+1. Implement PickTower function which will call the Activate and Deactivate function in Hover class through Singleton. This function is used to pick the tower and store the tower object. 
+
+2. Implement BuyTower function which will call the Activate and Deactivate function in Hover class through Singleton. This function is used to buy the tower and reduce the gold for users.  

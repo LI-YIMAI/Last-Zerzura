@@ -1,0 +1,9 @@
+Devlog-week4: A* algorithm pre-set up  
+
+1. Create node class and the node object is designed to form the node path (monster path).  
+
+2. Add attributes into node class.  
+
+3. Implement the constructor of node class. The node class includes the properties of TileScript which is created by Chang Liu and Zeye Gu
+
+4. Create A-Star class and implement CreateNodes() function which is used to add each node object into dictionary and each node has a reference relationship with TileScript object. 

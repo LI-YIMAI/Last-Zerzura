@@ -1,0 +1,7 @@
+Devlog-week12: Monster taking damage and speed debuff effect 
+
+1. Implement TakeDamage() function in Monster class. This function is used to taking the damage from tower and update the health bar. If the health is below 0, the gold will increase 2$ per monster killed.  
+
+2. The function can also take the debuff effect from the tower. The Monster speed will be decreased in 3 seconds.  
+
+3. Implement StartCountdown() function to count down 3 seconds for speed debuff time. Once the StartCountdown() has returned, the speed will be reset to default speed back.

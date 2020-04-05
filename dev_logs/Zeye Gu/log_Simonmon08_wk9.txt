@@ -1,0 +1,15 @@
+Devlog-week9: Coded tower range and tower targets functionalities this week
+
+  
+
+1.Add range config info with all the tower prefabs. 
+
+2.Add tower attack animations and connect them with corresponding towers. 
+
+3.Update Activate() and Deactivate() in Hover class so that the range will show and disapper on the hover as well. 
+
+4.Create Tower.cs and corresponding functions such as Select(). 
+
+5.Update functions relate to tower in GameManager and TileScript class (OnMouseOver function) so that when User clicking a tower that already on the map, the range will show up.  
+
+6.Creaet OnTriggerEnter2D(), OnTriggerExit2d() to select the targeting monster that the tower will attack to. Make sure towers do not attack any monsters that is already dead. 

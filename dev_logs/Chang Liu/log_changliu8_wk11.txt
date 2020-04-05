@@ -1,0 +1,7 @@
+Devlog-week11:  
+
+1. Implement shadow_tower_check() function in GameManager. This function is used to shadow the button if the gold is below the required gold for buying/update. This function has been added into the update function which will be called per frame. 
+
+2. Add health to the base, deduction health when enemy reach base, when health is zero, the game is over. 
+
+3. Created Game Over menu, user can select restart or quit to menu. 

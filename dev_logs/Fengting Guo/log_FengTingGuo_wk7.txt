@@ -1,0 +1,7 @@
+Devlog-week 7: 
+
+1. Implementing all in game background images  
+
+2. Creating bones for characters 
+
+3. Adding animation to character using Unity bone system. 

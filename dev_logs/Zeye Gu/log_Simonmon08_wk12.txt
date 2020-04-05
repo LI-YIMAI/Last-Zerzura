@@ -1,0 +1,10 @@
+Devlog-week12: Coded upgrade towers and selling towers functionalities this week. 
+
+
+1.Update SelectTower() and DeSelectTower() in GameManager. They are responsible for the tower panel. 
+
+2.Create SellTower() and upgradeTower() so that user can spend gold to upgrade tower and sell tower. 
+
+3.The damage of the tower are increased when they are upgrade. 
+
+ 

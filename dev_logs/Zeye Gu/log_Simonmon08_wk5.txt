@@ -1,0 +1,7 @@
+Devlog-week5: Coded placing tower functionality in this week. 
+
+1.Add PlaceTower() and OnMousOver() 
+
+2.Add Tower button prefabs. Setup their config info. 
+
+3.Set up towers has child-parent relationship with gird positions the towers currently on.This is done in PlaceTower() 

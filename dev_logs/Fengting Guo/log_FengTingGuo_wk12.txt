@@ -1,0 +1,13 @@
+Devlog-week 12: 
+
+1. Finalize art assets, we are happy for the result. 
+
+	12 background elements, 2 characters, 3 monsters 
+
+2. combine character images and bones.  
+
+3. Implementing animation and background of map block. 
+
+4. Game icon finished 
+
+5. Lunching game to google store

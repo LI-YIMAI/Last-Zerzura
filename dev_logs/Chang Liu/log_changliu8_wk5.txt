@@ -1,0 +1,7 @@
+Devlog-week5: Created Map 
+
+1. Implement a function called ReadLevelText() in class LevelManager, the behavior of the function is that read the text file and save as TextAsset, it has return value as a string.  
+
+2. Designed a map with text file in directory resources, in the text file, letter ¡°b¡± represents buildable tile, and ¡°e¡± represents enemy¡¯s path. 
+
+3. Created function called CreateLevel() in class LevelManager, it uses return value from ReadLevelText() and display the whole map. 

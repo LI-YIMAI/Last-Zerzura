@@ -1,0 +1,7 @@
+Devlog-week6: Implement functions in GameManager and create Monster class. 
+
+1. Create monster class with some attributes 
+
+2. Implement StartWave() function in GameManager. This function will be activated by user to click the Next Wave button in UI. 
+
+3. Implement SpawnWave() function in GameManager. This function will be called by StartWave() function and is used to spawn the monster in the map. 

@@ -1,0 +1,7 @@
+Devlog-week12:  
+
+1. Add functions showStats(), hideStats()  and setToolText() in GameManager, these controls the information text filed of the towers. 
+
+2. Add function ShowInfo() in TowerBtn, this function used showStats(), hideStats() and setToolText in GameManager, it display information when you have en 
+
+3. Added 3 more selection of maps to the game, ReadLevelText() reads different text file and construct different maps. 

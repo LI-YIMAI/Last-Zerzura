@@ -1,0 +1,7 @@
+Devlog-week6: Map display optimize 
+
+1. Set the camera to top left corner and display the map correctly. 
+
+2. Set the map size by reading the Text file by ReadLevelText(). 
+
+3. Created GeneratePath() function which implments Yimai¡¯s A* algorithm. 

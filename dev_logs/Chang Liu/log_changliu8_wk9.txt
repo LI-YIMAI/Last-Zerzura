@@ -1,0 +1,7 @@
+Devlog-week9: Hover class  
+
+1. Store the SpriteRender component in unity in start() function. It can help other function to get this GameObject straitghly. 
+
+2. Implement Follow Mouse function which can detect the position where the mouse stay.  
+
+3. Implement Activate and Deactivate function in Hover Class. The Activate function is used to enable the SpriteRender GameObject in unity. The Deactive function is used to disable the functionality of SpriteRender, and make the property of Clikedbtn to be null through Singleton class.  

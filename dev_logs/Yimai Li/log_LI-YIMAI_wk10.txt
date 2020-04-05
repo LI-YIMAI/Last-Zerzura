@@ -1,0 +1,7 @@
+Devlog-week10: Monster Health Bar & BarScript class 
+
+1. Create BarScript class attached with monster health bar. The Barscript control the color, Max value, fill amount, and lerpSpeed of health bar. 
+
+2. Implement the HandleBar() function in BarScript class which will keep checking the health value of monster and update the health bar for users. 
+
+3. Implement the reset() function in BarScript and it will be called each time when we spawning monsters. The monster will be set a new Max health value and current health value.  

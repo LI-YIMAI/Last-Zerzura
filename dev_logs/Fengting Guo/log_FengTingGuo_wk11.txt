@@ -1,0 +1,9 @@
+Devlog-week 11: 
+
+1. Second attempt isn¡¯t best fit for our game. 
+
+	5 background elements, 2 characters, 0 monsters 
+
+2. Third attempt of designing character and background images. 
+
+	Direction of game art design: Bold outline, Dark colored characters, depression game scenes 

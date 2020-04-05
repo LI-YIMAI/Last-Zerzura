@@ -1,0 +1,12 @@
+Devlog-week10:  Coded projectile functionality this week 
+
+
+1.Update bullets config info for all towers, 
+
+2.Create Shoot() in Tower.cs. This function makes sure each tower can get a projectile and the projectile can be easily replaced for further development. 
+
+3.Setup attack cool down and attack speed for the towers. 
+
+4.Make MoveToTarget() so that bullet can move towards the target monster with a certain speed. 
+
+5.Connect attacking animations to the towers and add attck trigger so that when there is a target monster in the range of a tower the attacking animation will start working. 

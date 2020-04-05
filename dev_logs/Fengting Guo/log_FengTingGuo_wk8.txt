@@ -1,0 +1,11 @@
+Devlog-week 8: 
+
+1.After serval testing, current art style is not best fit of our game. Frist attempt is rejected. 
+
+	6 background elements, 2 characters, 0 monsters 
+
+2. Creating Frog of War for in-game lighting effect. 
+
+	1. creating black mesh to cover the map. 
+
+	2.Adding ¡°fowUnit¡± script to change specified area on the mesh to transparent  

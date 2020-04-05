@@ -1,0 +1,9 @@
+Devlog-week7: Monster Spawn with speed, shortest path, and Monster scale.  
+
+1. Set up the speed of monster. 
+
+2. Implement Spawn () function in Monster class, this function is used to spawn the monster from the portal. This function will be called by StartWave () function in GameManager. 
+
+3. Implement Setpath () function in Monster class. The Setpath function can store the shortest path passed from LevelManager through Singleton.  
+
+4. Implement Scale () function in Monster class. This function is used to scaling the monster and changing its size along with time by lerp function.  

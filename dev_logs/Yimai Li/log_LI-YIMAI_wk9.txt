@@ -1,0 +1,9 @@
+Devlog-week9: Despawing Monster & Reuse Monster GameObject by Object Pool class
+
+1. Override the OnTriggerEnter2D function of Monobehavior. It will detect the collision between monster and portal. Once the collision has been detected, the scale function will be called. 
+
+2. Implement Release() function in Monster class. This function is used to remove the monster in the map and set its status as false.  
+
+3. Create Object pool class and implement GetObject() function and ReleaseObject() function. 
+
+4. The GetObject function can store the GameObject such as monster. Once the monster has been spawned, the monster object will be saved in a list. The GameObject can be reused for next time. The ReleaseObject function can set the status of stored Game Object to be false when the monster is dead or hit the portal.

@@ -1,0 +1,21 @@
+Devlog-week 6: 
+
+1. Continue working game main menu 
+
+	1. Background of map selecting window switch to the same background of map selecting button. 
+
+	2. Adding ¡°Setting window¡±, adding changing music setting 
+
+	3. Adding ¡°Tutorial¡± window 
+
+	4. Adding ¡°Credit¡± window, create GitHub links to each game developer. 
+
+2.Still working on in-game art assets 
+	
+	1. Serval background images done 
+
+	2. Two characters done 
+
+3. Creating loading screen 
+
+4. Creating animation for all windows. 

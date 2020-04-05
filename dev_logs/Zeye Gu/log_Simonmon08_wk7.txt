@@ -1,0 +1,9 @@
+Devlog-week7: Coded hover functionality this week 
+
+1.Update config info for hover for each tower. 
+
+2.Create Hover class and corresponding functions like FollowMouse(), Active() and Deactive(). 
+
+3.When user clicking a tower icon, they can find a corrsponding tower picture that follows the mouse. 
+
+4.After user click a tower icon, activate the hover. Deactivate the hover after the user place the tower. 

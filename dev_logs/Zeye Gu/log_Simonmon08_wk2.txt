@@ -1,0 +1,10 @@
+Devlog-week 2: UML, design pattern, and Architecture style 
+
+1.Drawing the component diagram and class diagram for our project. 
+
+2.Set up the OOP architecture style and event based architecture style 
+
+3.Design and set up the goal for LevelManager and GameManager. Like how the GameManager works, control or communicate with other component in project such as UI, monster, and the tower.  And how the LevelManager works for providing the map information for monster and tower. 
+
+4.Set up the unity development environment, create Game Scene, MainMenu Scene, and loadingScene as group.  
+

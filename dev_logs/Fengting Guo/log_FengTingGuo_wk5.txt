@@ -1,0 +1,23 @@
+Devlog-week 5: 
+
+1. Creating our game main menu 
+
+	1. Adding buttons list at bottom(contains ¡°Play¡±, ¡°Tutorial¡± ¡°Setting¡±, ¡°Credit¡±) 
+
+	2. Starting to add Map selection window 
+
+		1. list contains map selections 
+
+			1.  Creating map selecting button (game start button) 
+
+			2. Animation for clicking selecting button 
+
+			3. Sound for clicking selecting button 
+
+			4. Scroll feature 
+
+		2. adding close window button 
+
+			1. Animation for clicking closing window button 
+
+			2.Sound for clicking closing window button 

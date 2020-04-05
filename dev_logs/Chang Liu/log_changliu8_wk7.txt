@@ -1,0 +1,5 @@
+Devlog-week7: Map Prefabs Stored 
+
+1. Created function called PlaceTile() in LevelManager. For my design, I treat each tile on the map as a unique Game Object which means each tile has its own behavior. Some tiles are empty (buildable, can place tower on it.), some tiles are walkable (enemy¡¯s path).  It also implements tile script, that makes connections between tile script and LevelManager. 
+
+2. Created function called storePrefabs() in LevelManager. This function stores prefabs in a dictionary to increase the efficiency to access to the prefabs. 

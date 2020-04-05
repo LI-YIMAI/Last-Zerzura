@@ -1,0 +1,9 @@
+Devlog-week11: Coded shooting bullets debuff and damage functionalities this week. 
+
+
+
+1.Add new properties that are responsible for the slow debuff, it is done in the Tower class. 
+
+2.Add Damage property and update the tower prefab info. 
+
+3.Update attack() so that it supports both damage and debuff properties that deal with target monster. 

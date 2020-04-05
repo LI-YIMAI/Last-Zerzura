@@ -1,0 +1,13 @@
+Devlog-week 10: 
+
+1. Adding Pause window to in-game scene. 
+
+	1. adding continue button 
+
+	2. adding restart button 
+
+	3. adding exit button 
+
+2. Pausing game feature 
+
+3. All art assets are finished. Working on implementing to the game (background, animation). 

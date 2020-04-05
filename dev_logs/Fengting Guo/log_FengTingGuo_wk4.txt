@@ -1,0 +1,7 @@
+Devlog-week 4: 
+
+1.  Collecting images for main menu UI 
+
+2. First attempt of designing character and background images. 
+
+	Direction of game art design: Dark Shadow 

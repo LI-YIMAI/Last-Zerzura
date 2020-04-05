@@ -1,0 +1,13 @@
+Devlog-week 2: UML, design pattern, and Architecture style 
+
+Drawing the component diagram and class diagram for our project. 
+
+Set up the OOP architecture style and event based architecture style 
+
+Design and set up the goal for LevelManager and GameManager. Like how the GameManager works, control or communicate with other component in project such as UI, monster, and the tower.  And how the LevelManager works for providing the map information for monster and tower. 
+
+Set up the unity development environment, create Game Scene, MainMenu Scene, and loadingScene as group.  
+
+Assigned MainMenu scene and loadingScene of UI for Fengting Guo. The assigned UI also includes monster, tower, and map tile.  
+
+Assigned game scene for Chang Liu(Map implement), Zeye Gu(Tower implement), and Yimai Li(Monster Implement). 

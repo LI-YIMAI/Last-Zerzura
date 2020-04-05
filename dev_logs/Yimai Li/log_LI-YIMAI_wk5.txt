@@ -1,0 +1,11 @@
+
+Devlog-week5: A star Implement of Getpath() function, and Fix corner cutting problem
+
+
+1. The A* algorithm is one of variations of Dijkstra’s algorithm to find the shortest path for a directed graph. 
+
+2. Implement Getpath(Point start, Point goal) function. This function will be called from GeneratePath() function of LevelManager created by Chang Liu and pass the start portal point and end portal point to generate the path.  
+
+3. The Getpath function will return a shortest path to LevelManager and assigned to an attribute called path.  
+
+4. Fix the corner cutting problem  

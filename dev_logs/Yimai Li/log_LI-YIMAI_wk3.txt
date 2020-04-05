@@ -1,0 +1,9 @@
+Devlog-week3: Implement Singleton and Facade Design pattern
+
+1. working together for the Singleton design pattern and Facade Design pattern  
+
+2. Implement Singleton script which inheritance from the external unity API MonoBehaviour.  
+
+3. Make LevelManager, GameManager, and Hover script inheritance from Singleton<T> where T represent the type of itself. The other class or script can access the properties or functions straightforward by calling the instance attribute in Singleton  
+
+4. Implement Facade script which is the GameManager we have. It provides a simplified interface to control other classes(scripts) and UI component in unity. It is designed to control the game functionalities such spawning wave of monster, pick/buy tower, quit game, reload game, and restart, etc.  

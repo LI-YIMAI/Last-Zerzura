@@ -1,0 +1,7 @@
+Devlog-week8: Portal added 
+
+1. Created portal class. 
+
+2. Add function SpawnPortals() in LevelManager, this function will produce two portals , one for the start portal where is the enemy's spawn and another is our base. 
+
+3. Created function called InBounds() which returns a Boolean value, return false when out of bounds, return true otherwise. 

@@ -1,0 +1,5 @@
+Devlog-week8: Monster Movement followed the shortest path
+
+1. Implement Move() function in Monster class. This function has been called in update() fucntion of unity. The function is called per frame of game. Thus, the monster can keep moving by update() function and move() function. 
+
+2. Implement Animation function of monster. This function is used to interact with UI component for monster moving up, down, left, and right.  

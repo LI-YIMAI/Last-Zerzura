@@ -1,0 +1,7 @@
+Devlog-week 9: 
+
+1. Second attempt of designing character and background images. 
+
+	Direction of game art design: Cute anime character with dark background 
+
+2. Adding ¡°Fow_script¡± to process all ¡°fowUnit¡± objects that add to the list of ¡°fowUnit¡± objects 

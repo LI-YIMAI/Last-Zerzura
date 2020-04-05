@@ -1,0 +1,7 @@
+Devlog-week8: Coded dropping tower functionality this week 
+
+1.Create HandleEscape() and edit PlaceTower(), Setup() in TileScript.cs 
+
+2.After user clicking a tower icon, they can use ESC to deactivate selection mode. 
+
+3.Highlight the grid position on the map when a mouse holds a hover on it. 
