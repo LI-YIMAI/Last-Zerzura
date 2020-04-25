@@ -56,15 +56,14 @@ FengTing Guo|
 ---
 
 ### What Disgn Patterns Did We Use
-* Design Pattern
-* Archutectural Styles used in the project.
-* Component Diagram (D2)
-* Class Diagram (D3)
+* Event-based
+* Object-Oriented programing
 
 ---
 
 ### What Architecture Styles Did We Use
-
+* Singleton Design pattern
+* Façade Design pattern
 
 
 ---
