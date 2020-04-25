@@ -8,7 +8,7 @@
 - [How To Play This Game](#how-to-play-this-game)
 - [What Disgn Pattern Did We Use](#what-disgn-pattern-did-we-use)
 - [What Architecture Style Did We Use](#what-architecture-style-did-we-use)
-- [Carleton Youtube Video](#carleton-youtube-video)
+- [Game Showcase](#game-showcase)
 ---
 
 ###  Project Discription
@@ -38,7 +38,7 @@ FengTing Guo|
 
 ---
 
-#### Ingame Photoes
+### Ingame Photoes
 
 ---
 
@@ -60,7 +60,7 @@ FengTing Guo|
 
 ---
 
-### Game Showcase
+### Showcase Video
 
 <a href="https://www.youtube.com/watch?v=bs5-_I2jolA
 " target="_blank"><img src="https://github.com/LI-YIMAI/COMP3004/blob/master/README_Source/ucarl08.jpg" width="620" height="240" border="10" /></a>
