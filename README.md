@@ -7,15 +7,27 @@ http://olgabaysal.com/teaching/winter20/comp3004_w20.html
 
 - [Project Discription](#project-discription)
 - [Team Members](#team-members)
-- [Current Goal](#current-goal)
-- [Requirements Of The Project](#requirements-of-the-project)
-- [Important Code](#important-code)
+- [How To Play This Game](#how-to-play-this-game)
+- [What Disgn Pattern Did We Use](#what-disgn-pattern-did-we-use)
+- [What Architecture Style Did We Use](#what-architecture-style-did-we-use)
 - [How to Play This Game](#how-to-play-this-game)
 - [Carleton Youtube Video](#carleton-youtube-video)
 ---
 
 ###  Project Discription
-Survivors is a Tower Defense game set in a human world that is invaded by robots. The Survivors is free to play without any ads, and it supports the Android platform.
+The project is a 2D tower defense game based on unity. The user interface provides the
+functionalities which include Map selection menu, game level selection, setting button,
+and detailed tutorials which can improve the game experience for users. In the game
+interface, there is a button that can be clicked, and a menu will be popped up. It can
+provide the functionalities of restart, pause, and quit the game for users. There are three
+maps provided for the user. The main feature of the map is the fog of war. Users can
+detect more vision by placing the tower. It can strengthen the interaction between user
+and gaming behavior. There are four towers for users and one of them is called scout
+tower which can bring more vison to the map. The other three towers are designed for
+attacking minions. Each tower has associated gold and the user must build the tower
+through the game store with their gold. The tower can be upgraded by the user with more
+gold. The gold can be earned through killing minions. Also, the tower could be sold by
+the users. 
 
 ---
 
@@ -29,13 +41,11 @@ FengTing Guo|
 
 ---
 
-### Current Goal
-- [ ] Map
-- [ ] Turrent
-- [ ] Minions
+### How To Play This Game
+
 ---
 
-### Requirements Of The Project
+### What Disgn Pattern Did We Use
 * Design Pattern
 * Archutectural Styles used in the project.
 * Component Diagram (D2)
@@ -43,7 +53,7 @@ FengTing Guo|
 
 ---
 
-### Important Code
+### What Architecture Style Did We Use
 
 #### How to load the next scene
 ``` c#
