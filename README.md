@@ -4,11 +4,9 @@
 
 - [Project Discription](#project-discription)
 - [Available On Google Play Store](#available-on-google-play-store)
-- [Team Members](#team-members)
 - [Ingame Photoes](#ingame-photoes)
-- [Architecture Styles](#architecture-styles)
-- [Disgn Patterns](#disgn-patterns)
 - [Showcase Video](#showcase-video)
+- [Team Members](#team-members)
 ---
 
 ###  Project Discription
@@ -33,16 +31,6 @@ the users.
   <a href="https://play.google.com/store/apps/details?id=com.GimemeFM.LastZerzura" target="_blank"><img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Game_icon.png" width="100" height="100" border="10" /></a>
 ---
 
-### Team Members
-Name |
------|
-Chang Liu|
-Yimai Li|
-Zeye Gu|
-FengTing Guo|
-
----
-
 ### Ingame Photoes
 <img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Screen%20Shot%202020-04-25%20at%206.28.20%20PM.png" width="420" height="250" border="10" />
 
@@ -56,19 +44,20 @@ FengTing Guo|
 
 ---
 
-### Architecture Styles
-* Event-based
-* Object-Oriented programing
-
----
-
-### Disgn Patterns
-* Singleton Design pattern
-* Façade Design pattern
-
----
 
 ### Showcase Video
 
 <a href="https://www.youtube.com/watch?v=bs5-_I2jolA
 " target="_blank"><img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/gameicon%20with%20youtube.png" width="100" height="110" border="10" /></a>
+
+---
+
+### Team Members
+Name |
+-----|
+Chang Liu|
+Yimai Li|
+Zeye Gu|
+FengTing Guo|
+
+
