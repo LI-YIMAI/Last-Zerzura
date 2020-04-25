@@ -72,4 +72,4 @@ FengTing Guo|
 ### Showcase Video
 
 <a href="https://www.youtube.com/watch?v=bs5-_I2jolA
-" target="_blank"><img src="https://github.com/LI-YIMAI/COMP3004/blob/master/README_Source/ucarl08.jpg" width="620" height="240" border="10" /></a>
+" target="_blank"><img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/gameicon%20with%20youtube.png" width="100" height="100" border="10" /></a>
