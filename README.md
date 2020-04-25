@@ -60,5 +60,5 @@ SceneManager.LoadScene(1); // Scene 1 is the loading screen
 
 ### Carleton Youtube Video
 
-<a href="https://youtu.be/kT-q31NzQUI
+<a href="https://www.youtube.com/watch?v=bs5-_I2jolA
 " target="_blank"><img src="https://github.com/LI-YIMAI/COMP3004/blob/master/README_Source/ucarl08.jpg" width="620" height="240" border="10" /></a>
