@@ -8,7 +8,7 @@
 - [How To Play This Game](#how-to-play-this-game)
 - [What Disgn Pattern Did We Use](#what-disgn-pattern-did-we-use)
 - [What Architecture Style Did We Use](#what-architecture-style-did-we-use)
-- [Game Showcase](#game-showcase)
+- [Showcase Video](#showcase-video)
 ---
 
 ###  Project Discription
