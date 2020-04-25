@@ -12,7 +12,7 @@
 ---
 
 ###  Project Discription
-The project is a 2D tower defense game based on unity. The user interface provides the
+   The project is a 2D tower defense game based on unity. The user interface provides the
 functionalities which include Map selection menu, game level selection, setting button,
 and detailed tutorials which can improve the game experience for users. In the game
 interface, there is a button that can be clicked, and a menu will be popped up. It can
@@ -29,7 +29,8 @@ the users.
 ---
 
 ### Available On Google Play Store
-  https://play.google.com/store/apps/details?id=com.GimemeFM.LastZerzura
+  - Click The Icon To see
+  <a href="https://play.google.com/store/apps/details?id=com.GimemeFM.LastZerzura" target="_blank"><img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Game_icon.png" width="100" height="100" border="10" /></a>
 ---
 
 ### Team Members
