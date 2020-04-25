@@ -3,9 +3,9 @@
 ##  Table of Content
 
 - [Project Discription](#project-discription)
+- [Available On Google Play Store](#available-on-google-play-store)
 - [Team Members](#team-members)
 - [Ingame Photoes](#ingame-photoes)
-- [How To Play This Game](#how-to-play-this-game)
 - [What Disgn Pattern Did We Use](#what-disgn-pattern-did-we-use)
 - [What Architecture Style Did We Use](#what-architecture-style-did-we-use)
 - [Showcase Video](#showcase-video)
@@ -28,6 +28,10 @@ the users.
 
 ---
 
+### Available On Google Play Store
+https://play.google.com/store/apps/details?id=com.GimemeFM.LastZerzura
+---
+
 ### Team Members
 Name |
 -----|
@@ -48,10 +52,6 @@ FengTing Guo|
 <img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Screen%20Shot%202020-04-25%20at%206.30.46%20PM.png" width="420" height="250" border="10" />
 
 <img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Screen%20Shot%202020-04-25%20at%206.33.02%20PM.png" width="420" height="250" border="10" />
----
-
-### How To Play This Game
-
 ---
 
 ### What Disgn Patterns Did We Use
