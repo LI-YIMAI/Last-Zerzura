@@ -1,4 +1,4 @@
-# :cn: COMP3004 :thinking:
+# COMP3004 :thinking:
 
 ### Instructor website
 http://olgabaysal.com/teaching/winter20/comp3004_w20.html
@@ -55,20 +55,17 @@ FengTing Guo|
 
 ### What Architecture Style Did We Use
 
+
+---
 #### How to load the next scene
 ``` c#
 //To Load a Scene, you must use this
 GameStaticValue.currentScene = 2; //GameStaticValue saves all values that pass through different scenes
 SceneManager.LoadScene(1); // Scene 1 is the loading screen
 ```
-
 ---
 
-### How to Play This Game
-
----
-
-### Carleton Youtube Video
+### Game Showcase
 
 <a href="https://www.youtube.com/watch?v=bs5-_I2jolA
 " target="_blank"><img src="https://github.com/LI-YIMAI/COMP3004/blob/master/README_Source/ucarl08.jpg" width="620" height="240" border="10" /></a>
