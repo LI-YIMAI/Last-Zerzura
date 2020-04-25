@@ -53,6 +53,7 @@ FengTing Guo|
 <img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Screen%20Shot%202020-04-25%20at%206.30.46%20PM.png" width="420" height="250" border="10" />
 
 <img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Screen%20Shot%202020-04-25%20at%206.33.02%20PM.png" width="420" height="250" border="10" />
+
 ---
 
 ### What Disgn Patterns Did We Use
@@ -65,10 +66,9 @@ FengTing Guo|
 * Singleton Design pattern
 * Façade Design pattern
 
-
 ---
 
 ### Showcase Video
 
 <a href="https://www.youtube.com/watch?v=bs5-_I2jolA
-" target="_blank"><img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/gameicon%20with%20youtube.png" width="100" height="100" border="10" /></a>
+" target="_blank"><img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/gameicon%20with%20youtube.png" width="100" height="110" border="10" /></a>
