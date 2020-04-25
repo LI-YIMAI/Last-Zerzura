@@ -1,16 +1,13 @@
-# COMP3004 :thinking:
-
-### Instructor website
-http://olgabaysal.com/teaching/winter20/comp3004_w20.html
+# Tower Defence Game - Last-Zerzura
 
 ##  Table of Content
 
 - [Project Discription](#project-discription)
 - [Team Members](#team-members)
+- [Ingame Photoes](#ingame-photoes)
 - [How To Play This Game](#how-to-play-this-game)
 - [What Disgn Pattern Did We Use](#what-disgn-pattern-did-we-use)
 - [What Architecture Style Did We Use](#what-architecture-style-did-we-use)
-- [How to Play This Game](#how-to-play-this-game)
 - [Carleton Youtube Video](#carleton-youtube-video)
 ---
 
@@ -41,11 +38,15 @@ FengTing Guo|
 
 ---
 
+#### Ingame Photoes
+
+---
+
 ### How To Play This Game
 
 ---
 
-### What Disgn Pattern Did We Use
+### What Disgn Patterns Did We Use
 * Design Pattern
 * Archutectural Styles used in the project.
 * Component Diagram (D2)
@@ -53,16 +54,10 @@ FengTing Guo|
 
 ---
 
-### What Architecture Style Did We Use
+### What Architecture Styles Did We Use
 
 
----
-#### How to load the next scene
-``` c#
-//To Load a Scene, you must use this
-GameStaticValue.currentScene = 2; //GameStaticValue saves all values that pass through different scenes
-SceneManager.LoadScene(1); // Scene 1 is the loading screen
-```
+
 ---
 
 ### Game Showcase
