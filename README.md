@@ -6,8 +6,8 @@
 - [Available On Google Play Store](#available-on-google-play-store)
 - [Team Members](#team-members)
 - [Ingame Photoes](#ingame-photoes)
-- [What Disgn Pattern Did We Use](#what-disgn-pattern-did-we-use)
-- [What Architecture Style Did We Use](#what-architecture-style-did-we-use)
+- [Architecture Styles](#architecture-styles)
+- [Disgn Patterns](#disgn-patterns)
 - [Showcase Video](#showcase-video)
 ---
 
@@ -56,13 +56,13 @@ FengTing Guo|
 
 ---
 
-### What Disgn Patterns Did We Use
+### Architecture Styles
 * Event-based
 * Object-Oriented programing
 
 ---
 
-### What Architecture Styles Did We Use
+### Disgn Patterns
 * Singleton Design pattern
 * Façade Design pattern
 
