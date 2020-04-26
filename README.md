@@ -27,7 +27,8 @@ the users.
 ---
 
 ### Available On Google Play Store
-  - Click The Icon To see
+  Click The Icon To See
+  
   <a href="https://play.google.com/store/apps/details?id=com.GimemeFM.LastZerzura" target="_blank"><img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Game_icon.png" width="100" height="100" border="10" /></a>
 ---
 
