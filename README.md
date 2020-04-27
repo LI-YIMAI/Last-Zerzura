@@ -41,7 +41,10 @@ the users.
 
 <img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Screen%20Shot%202020-04-25%20at%206.30.46%20PM.png" width="420" height="250" border="10" />
 
+<img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Screen%20Shot%202020-04-25%20at%206.30.03%20PM.png" width="420" height="250" border="10" />
+
 <img src="https://github.com/LI-YIMAI/Last-Zerzura/blob/master/TD%20screenshots/Screen%20Shot%202020-04-25%20at%206.33.02%20PM.png" width="420" height="250" border="10" />
+
 
 ---
 
